@@ -1,0 +1,143 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="surveystyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fCC Survey Form Project</title>
+</head>
+
+<body>
+    <h1 id="title">fCC Survey Project</h1>
+    <p id="description">A short survey project for the freecodecamp.com curriculum that demonstrates my ability to
+        create forms in a semantic fasion keeping to a fully reactive design and making it so there will be required
+        fields that show errors if not properly filled out.</p>
+    <div id="myForm">
+        <form id="survey-form" method="GET" action="https://fp1.formmail.com/cgi-bin/fm192">
+            <fieldset class="fieldset1">
+                <h3>Please Rate your Web Developer skills now:</h3>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label id="name-label" for="name">* Name: </label>
+                    </div>
+                    <div class="rightTab">
+                        <input autofocus type="text" name="name" id="name" class="input-field"
+                            placeholder="Enter your name" required>
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label id="email-label" for="email">* Email: </label>
+                    </div>
+                    <div class="rightTab">
+                        <input type="email" name="email" id="email" class="input-field" required
+                            placeholder="Enter your Email">
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label id="number-label" for="age">* Age: </label>
+                    </div>
+                    <div class="rightTab">
+                        <input type="number" name="age" id="number" min="1" max="125" class="input-field"
+                            placeholder="Age">
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label for="currentPos">Current Position</label>
+                    </div>
+                    <div class="rightTab">
+                        <select id="dropdown" name="currentPos" class="dropdown">
+                            <option disabled value>Select an option</option>
+                            <option value="student">Student</option>
+                            <option value="work">Full Time Developer</option>
+                            <option value="learner">Self Taught Hobbiest</option>
+                            <option value="unstated">Prefer not to say</option>
+                            <option value="other">Straight Hack</option>
+                        </select>
+                    </div>
+                    <div class="rowTab">
+                        <div class="labels">
+                            <label for="userRatings">
+                                About how old where you when you began coding?
+                            </label>
+                        </div>
+                        <div class="rightTab">
+                            <ul style="list-style: none;">
+                                <li class="radio">
+                                    <label>10 or younger<input name="radio-buttons" value="1" type="radio"
+                                            class="userRatings"></label></li>
+                                <li class="radio"><label>11 - 19<input name="radio-buttons" value="2" type="radio"
+                                            class="userRatings"></label>
+                                <li>
+                                <li class="radio"><label>20 - 30<input name="radio-buttons" value="3" type="radio"
+                                            class="userRatings"></label></li>
+                                <li class="radio"><label>31+<input name="radio-buttons" value="4" type="radio"
+                                            class="userRatings"></label></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="rowTab">
+                        <div class="labels">
+                            <label for="most-like">What do you like most about Coding: </label>
+                        </div>
+                        <div class="rightTab">
+                            <select id="most-like" name="mostLike" class="dropdown">
+                                <option disabled selected value>Select an option</option>
+                                <option value="challenges">Designing</option>
+                                <option value="projects">Building</option>
+                                <option value="community">Problem Solving</option>
+                                <option value="openSource">Money</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="rowTab">
+                        <div class="labels">
+                            <label for="preferences">What Libraries and Frameworks do you use most often. Check all that
+                                apply.</label>
+                        </div>
+                        <div class="rightTab">
+                            <ul id="preferences" style="list-style: none;">
+                                <li class="checkbox"><label><input name="prefer" value="1" type="checkbox"
+                                            class="userRatings">React</label></li>
+                                <li class="checkbox"><label><input name="prefer" value="2" type="checkbox"
+                                            class="userRatings">Bootstrap</label></li>
+                                <li class="checkbox"><label><input name="prefer" value="3" type="checkbox"
+                                            class="userRatings">Node.js</label></li>
+                                <li class="checkbox"><label><input name="prefer" value="4" type="checkbox"
+                                            class="userRatings">jQuery</label></li>
+                                <li class="checkbox"><label><input name="prefer" value="5" type="checkbox"
+                                            class="userRatings">php</label></li>
+                                <li class="checkbox"><label><input name="prefer" value="6" type="checkbox"
+                                            class="userRatings">SQL</label></li>
+                                <li class="checkbox"><label><input name="prefer" value="7" type="checkbox"
+                                            class="userRatings">sass</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="rowTab">
+                        <div class="labels">
+                            <label for="comments">Any Advice or suggestions?</label>
+                        </div>
+                        <div class="rightTab">
+                            <textarea id="comments" class="input-field" style="height:50px;resize:vertical;"
+                                name="comment" placeholder="type your comment here..."></textarea>
+                        </div>
+                    </div>
+                    <button id="submit" type="submit">Submit</button>
+                    <input type="hidden" name="_pid" value="154901">
+                    <input type="hidden" name="_fid" value="ZOH5VHN7">
+                    <input type="hidden" name="recipient" value="1">
+                    <input type="hidden" name="subject" value="fCC survey project">
+                    <input type="hidden" name="redirect" value="http://www.highrez.online/thankyou.html">
+        </form>
+    </div>
+
+
+</body>
+
+</html>

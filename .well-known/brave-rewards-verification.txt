@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: ryanzurrin.com
+Token: a0bb1cba062958790fc4fa581d9c4b9baa8b7ff415544a3bacd064dda6773714
