@@ -14,8 +14,15 @@
 <!--[if gt IE 9]><!-->
 <html class="no-js" lang="en">
 <!--<![endif]-->
-
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5M3DGZN');</script>
+    <!-- End Google Tag Manager -->
+
     <link rel="shortcut icon" href="../images/logofavicon32.ico" type="image/x-icon">
     <meta charset="UTF-8" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -44,6 +51,10 @@
 </head>
 
 <body onLoad="load()" onUnload="GUnload()">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5M3DGZN"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!--wrapper start-->
     <!--Header start -->
     <div class="center">
@@ -167,19 +178,18 @@
         <div class="center"><a href="../index.html"><img src="../../images/logo-3.PNG" alt="logo link"></a></div>
         <div class="container">
             <ul>
-                <li><a href="https://www.linkedin.com/in/ryan-zurrin-586189128/" target="_blank"><i
-                            class="fa fa-linkedin fa-2x"></i></a></li>
-                <li><a href="https://www.facebook.com/ryanzurrin" target="_blank"><i
-                            class="fa fa-facebook fa-2x"></i></a></li>
-                <li><a href="https://twitter.com/ryan_zurrin" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
-                </li>
+                <li><a href="https://www.linkedin.com/in/ryan-zurrin-586189128/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
+                <li><a href="https://www.facebook.com/ryanzurrin" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
+                <li><a href="https://twitter.com/ryan_zurrin" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>                </li>
                 <li><a href="https://github.com/RyanZurrin" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
-                <li><a href="https://www.freecodecamp.org/highrez" target="_blank"><i class="fa fa-code fa-2x"></i></a>
-                </li>
+                <li><a href="https://www.freecodecamp.org/ryanzurrin" target="_blank"><i class="fa fa-code fa-2x"></i></a></li>
                 <li><a href="https://www.google.com" target="_blank"><i class="fa fa-search fa-2x"></i>
             </ul>
         </div>
-        <h4 class="center">Copyright &copy; 2020 ryanzurrin.com </h4><br>
+        <h4 class="center">Copyright &copy; <span id="copyright-year">2020</span> ryanzurrin.com  </h4><br>
+        <script>
+          document.querySelector('#copyright-year').innerText = new Date().getFullYear();
+        </script>
     </section>
 
     <footer>

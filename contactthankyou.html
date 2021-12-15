@@ -11,7 +11,15 @@
 <!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
 <!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+
+<!-- Google Tag Manager -->
 <head>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5M3DGZN');</script>
+    <!-- End Google Tag Manager -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
    $(document).ready(function() {
@@ -48,13 +56,14 @@
 <link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 <body onLoad="load()" onUnload="GUnload()">
-
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5M3DGZN"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 <!--wrapper start-->
 <div class="wrapper noGap" id="wrapper">
 
-<!--Header start -->
-
-  
+<!--Header start -->  
 <div class="center">
   <h1>Thank You For Your Interest</h1> 
 </div>
@@ -64,18 +73,12 @@
     <p>
       Your message has been successfully sent and will be reviewed as soon as possible.
       Have a wonderful day and thank you for you interest in 
-      ryanzurrin.com     
+      ryanzurrin.com  
+     
     </p>
 
   </div>
-</div>
-
-     
- 
-              
-  
-
-  
+</div> 
   <!--footer start-->
   <section class="footer" id="footer">
    
@@ -94,7 +97,10 @@
       </ul>
     </div>
     
-    <h4 class="center">Copyright &copy; 2019 ryanzurrin.com </h4><br>    
+    <h4 class="center">Copyright &copy; <span id="copyright-year">2020</span> ryanzurrin.com  </h4><br>
+    <script>
+      document.querySelector('#copyright-year').innerText = new Date().getFullYear();
+    </script> 
   </section>
   <footer><div class="text-center"></div></footer><br>
  <div class="back-to-top-wrapper" id="back_top"><a href="#wrapper" data-scroll="#top" class="back-to-top" title="Back to top">
@@ -102,23 +108,11 @@
     <path d="M10 50l50 50L70 90 30 50 70 10 60 0z" transform="translate(0 0) rotate(90 50 50)" fill="#fff" stroke="#fff"></path>
     </svg></a>
   </div>
-
   <!--footer end-->     
 </div> 
 <!--wrapper end--> 
-
-
 <!--jquary min js--> 
 <script   src="js/jquery.min.js"></script> 
-
-
-
-
-
-
-
-
-
 <!--for theme custom jquery--> 
 <script src="js/custom.js"></script>
 

@@ -12,7 +12,15 @@
 <!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
 <!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+
 <head>
+ <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5M3DGZN');</script>
+  <!-- End Google Tag Manager -->
 <link rel="shortcut icon" href="../images/logofavicon32.ico" type="image/x-icon">
 <meta charset="UTF-8" />
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -38,13 +46,12 @@
 <link rel="stylesheet" href="../css/font-awesome.min.css">
 </head>
 <body onLoad="load()" onUnload="GUnload()">
-
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5M3DGZN"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 <!--wrapper start-->
-
-
-<!--Header start -->
-
-  
+ 
 <div class="center">
   <h1>Digital Journal Entry</h1> 
   <p>by Ryan Zurrin</p><hr><hr>
@@ -133,20 +140,7 @@
         <p class="center"><a role="button" class="btn btn-primary btn-lg" href="cpp1_programs/thirteenMarbles.exe" target="_blank">Thirteen Marbles exe</a></p>
         <hr>
 
-        <!--
-        <p class="center"></p>
-        <p class="center"><a role="button" class="btn btn-primary btn-lg" href="cpp1_programs/.cpp" target="_blank">P</a></p>
-        <hr>
-
-        <p class="center"></p>
-        <p class="center"><a role="button" class="btn btn-primary btn-lg" href="cpp1_programs/.cpp" target="_blank">P</a></p>
-        <hr>
-
-        <p class="center"></p>
-        <p class="center"><a role="button" class="btn btn-primary btn-lg" href="cpp1_programs/.cpp" target="_blank">P</a></p>
-        <hr>
-        -->
-
+   
       </div>
   </div>
   
@@ -175,8 +169,6 @@ s.setAttribute('data-timestamp', +new Date());
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
-
-
 </div>
 </div>
  <!--footer start-->
@@ -190,24 +182,24 @@ s.setAttribute('data-timestamp', +new Date());
         <li><a href="https://www.facebook.com/ryanzurrin" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
         <li><a href="https://twitter.com/ryan_zurrin" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
         <li><a href="https://github.com/RyanZurrin" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
-        <li><a href="https://www.freecodecamp.org/highrez" target="_blank"><i class="fa fa-code fa-2x"></i></a></li>
+        <li><a href="https://www.freecodecamp.org/ryanzurrin" target="_blank"><i class="fa fa-code fa-2x"></i></a></li>
         <li><a href="https://www.google.com" target="_blank"><i class="fa fa-search fa-2x"></i>
       </ul>
     </div>
-    <h4 class="center">Copyright &copy; 2019 ryanzurrin.com </h4><br>
+    <h4 class="center">Copyright &copy; <span id="copyright-year">2020</span> ryanzurrin.com  </h4><br>
+    <script>
+      document.querySelector('#copyright-year').innerText = new Date().getFullYear();
+    </script>
   </section>
 
   <footer><div class="text-center"></div></footer><br>
-  <!--<p class="text-center"><a href="#wrapper" class="gototop"><i class="fa fa-chevron-up fa-2"></i></a></p>-->
-
-  
+  <!--<p class="text-center"><a href="#wrapper" class="gototop"><i class="fa fa-chevron-up fa-2"></i></a></p>-->  
   
   <div class="back-to-top-wrapper" id="back_top"><a href="#wrapper" data-scroll="#top" class="back-to-top" title="Back to top">
     <svg viewBox="0 0 100 100" width="25" height="25" tabindex="-1" role="img" aria-labelledby="title"><title id="title">Back to top</title>
     <path d="M10 50l50 50L70 90 30 50 70 10 60 0z" transform="translate(0 0) rotate(90 50 50)" fill="#fff" stroke="#fff"></path>
     </svg></a>
   </div>
-
 
   <!--footer end-->     
 </div> 
@@ -217,14 +209,10 @@ s.setAttribute('data-timestamp', +new Date());
 <script>
     $(document).ready(function() {
       $("footer div").html("This page was last modified on: "+document.lastModified);
-    });
-    
+    });    
 </script>
-
 <!--jquary min js--> 
 <script   src="../js/jquery.min.js"></script> 
-
-
 
 <!--for theme custom jquery--> 
 <script src="../js/custom.js"></script>

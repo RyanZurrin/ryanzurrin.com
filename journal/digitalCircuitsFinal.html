@@ -12,7 +12,15 @@
 <!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
 <!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+
 <head>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5M3DGZN');</script>
+  <!-- End Google Tag Manager -->
 <link rel="shortcut icon" href="../images/logofavicon32.ico" type="image/x-icon">
 <meta charset="UTF-8" />
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
@@ -46,7 +54,10 @@
 </style>
 </head>
 <body onLoad="load()" onUnload="GUnload()">
-
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5M3DGZN"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 <!--wrapper start-->
 
 
@@ -68,10 +79,11 @@
       <p class="center"><a role="button" class="btn btn-primary btn-lg" href="FinalProject_writeup.pdf" target="_blank">
           PDF File of the circuits documentation</a></p>
     <h5 class="center">Schematic of the circuit I designed</h5>
-      <div class="center"><img src="printready.png"
-          alt="vending machine circuit design"></div>
-          <p>
-            paragraph text here
+      <div class="center"><a href="printready.png" target="_blank"><img src="printready.png"
+          alt="vending machine circuit design"></a></div><br><br>
+          <p class="center" ><a role="button" class="btn btn-primary btn-lg" href="simulation_vending_machine.ms14" target="_blank">
+            Downloadable Multisim circuit simulation
+          </a><br>***You need Multisim to run this file!***
           </p>
     </div> 
 <div id="respond">
@@ -99,39 +111,9 @@ s.setAttribute('data-timestamp', +new Date());
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
-
-<!--
-<form action="https://fp1.formmail.com/cgi-bin/fm192" method="POST" name="commentform" id="commentform">
-
-  <label for="comment_author" class="required">Your name</label>
-  <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" placeholder="Enter your Name" required="required">
-
-  <label for="email" class="required">Your email;</label>
-  <input type="email" name="email" id="email" value="" tabindex="2" placeholder="Enter your Email" required="required">
-
-  <label for="comment" class="required">Your message</label>
-  <textarea name="comment" id="comment" rows="10" tabindex="4" placeholder="Enter Comment"  required="required"></textarea>
-
-  <input name="submit" type="submit" value="Submit comment" />
-  <input type="hidden" name="_pid" value="154901">
-  <input type="hidden" name="_fid" value="ZOH5VHN7">
-  <input type="hidden" name="recipient" value="1">
-  <input type="hidden" name="subject" value="comment">
-  <input type="hidden" name="redirect" value="http://www.ryanzurrin.com/under_construction.html">
-  <input type="hidden" name="env_report" value="REMOTE_ADDR,HTTP_USER_AGENT">
-
-</form>
--->
-
 </div>
 </div>
 
-     
- 
-              
-  
-
-  
   <!--footer start-->
   <section class="footer" id="footer">
     <hr>
@@ -143,12 +125,15 @@ s.setAttribute('data-timestamp', +new Date());
         <li><a href="https://www.facebook.com/ryanzurrin" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
         <li><a href="https://twitter.com/ryan_zurrin" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
         <li><a href="https://github.com/RyanZurrin" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
-        <li><a href="https://www.freecodecamp.org/highrez" target="_blank"><i class="fa fa-code fa-2x"></i></a></li>
+        <li><a href="https://www.freecodecamp.org/ryanzurrin" target="_blank"><i class="fa fa-code fa-2x"></i></a></li>
         <li><a href="https://www.google.com" target="_blank"><i class="fa fa-search fa-2x"></i>
 
       </ul>
     </div>
-    <h4 class="center">Copyright &copy; 2019 ryanzurrin.com </h4><br>
+    <h4 class="center">Copyright &copy; <span id="copyright-year">2020</span> ryanzurrin.com  </h4><br>
+    <script>
+      document.querySelector('#copyright-year').innerText = new Date().getFullYear();
+    </script>
   </section>
 
   <footer><div class="text-center"></div></footer><br>
@@ -177,14 +162,6 @@ s.setAttribute('data-timestamp', +new Date());
 
 <!--jquary min js--> 
 <script   src="../js/jquery.min.js"></script> 
-
-
-
-
-
-
-
-
 
 <!--for theme custom jquery--> 
 <script src="../js/custom.js"></script>

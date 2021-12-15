@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<!--
+    filename: .html
+    edited by: Ryan Zurrin
+    edited on: 
+    discription: 
+    Template from:"http://www.designstub.com/projects/folio-personal-portfolio-template/"
+-->
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<link rel="shortcut icon" href="../images/logofavicon32.ico" type="image/x-icon">
+<meta charset="UTF-8" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://www.your-domain.com/easy-comment/jquery.easy-comment.min.js"></script>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- chrome=1"-->
+<!-- Metas Page details-->
+<title>Data Structures - Ryan Zurrin</title>
+<meta name="description" content="ADT's from Data Structures class, implementation detalis for c++ containters and driver programs.">
+<meta name="Ryan Zurrin" content="Journal">
+<!-- Mobile Specific Metas-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--main style-->
+<link rel="stylesheet" type="text/css" media="screen" href="../css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" media="screen" href="../css/main.css">
+<!--google font style-->
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+<!--font-family: 'Metrophobic', serif;-->
+<link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,600,400italic,600italic' rel='stylesheet' type='text/css'> 
+<!--font-family: 'Open Sans', sans-serif;-->
+<!-- font icon css style-->
+<link rel="stylesheet" href="../css/font-awesome.min.css">
+</head>
+<body onLoad="load()" onUnload="GUnload()">
+
+<!--wrapper start-->
+
+
+<!--Header start -->  
+<div class="center">
+  <h1>Digital Journal Entry</h1> 
+  <p>by Ryan Zurrin</p><hr><hr>
+</div>
+<div class="wrapper noGap" id="wrapper"></div>
+  <div class="container">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="heading"><h2>Data Structures and Abstract Data Types</h2>
+        <h3>Implementation details and driver code is all found within their github repositories. I have included links to 
+            each repo which has the source files to the header files as well as driver test cpp files and any related and 
+            necessary files needed to run these programs. These projects were built using VS2019 and then made to run within
+            Dev c++ set on the oldest compiler settings so this code should run on almost any compiler and machine if implemented
+            using each file I provide.
+        </h3><hr>
+      </div>
+     <div>
+        <div class="heading"><h2>Links to GitHub Repositories</h2>
+
+            <h5>Pascals Triangle Class</h5>
+            <p class="center"><a role="button" class="btn btn-primary btn-lg" 
+               href="https://github.com/RyanZurrin/Pascals_Triangle" target="_blank">Pascals Triangle repo</a> </p> 
+
+             <h5>Palindrome Tester program</h5>
+             <p class="center"><a role="button" class="btn btn-primary btn-lg" 
+                href="https://github.com/RyanZurrin/PalindromeTester" target="_blank">Palindrome tester repo</a> </p>               
+
+             <h5>Queens Eight solver, but will solve any NxN size board if specified</h5>
+             <p class="center"><a role="button" class="btn btn-primary btn-lg" 
+                href="https://github.com/RyanZurrin/QueensEight" target="_blank">Queens NxN solver repo</a> </p>               
+
+             <h5>Sorted and Unsorted Linked List Classes and data loader program</h5>
+             <p class="center"><a role="button" class="btn btn-primary btn-lg" 
+                href="https://github.com/RyanZurrin/LinkedLists_cpp" target="_blank">Linked Lists repo</a> </p>
+
+             <h5>Doubly Linked list Class and Inventory control Program</h5>
+             <p class="center"><a role="button" class="btn btn-primary btn-lg" 
+                href="https://github.com/RyanZurrin/InventoryControlProgram" target="_blank">DLL program repo</a> </p>
+
+             <h5>Stack Class and PEZ Despenser Simulator program</h5>
+             <p class="center"><a role="button" class="btn btn-primary btn-lg" 
+                href="https://github.com/RyanZurrin/PEZ-Dispenser" target="_blank">Stack program repo</a> </p>                 
+
+             <h5>Queue Class and Grocery Store Simulator program</h5>
+             <p class="center"><a role="button" class="btn btn-primary btn-lg" 
+                href="https://github.com/RyanZurrin/Grocery-Store-Simulator" target="_blank">Queue program repo</a> </p>                
+
+             <h5>Binary Tree Class and test proj7 test program</h5>
+             <p class="center"><a role="button" class="btn btn-primary btn-lg" 
+                href="https://github.com/RyanZurrin/BinaryTree" target="_blank">Binary Tree program repo</a> </p>   
+                
+             <h5>Final Project - Card Game program</h5>
+             <p class="center"><a role="button" class="btn btn-primary btn-lg" 
+                href="https://github.com/RyanZurrin/CardGamesFinalPrject" target="_blank">Card game program repo</a> </p>               
+        
+         </div>
+     </div>
+  
+<div id="respond">
+
+<h3>Leave a Comment</h3>
+
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = 'https://www.ryanzurrin.com/journal/journal_datastructures.html';  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = 'ds1'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://ryanzurrin.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+</div>
+</div>
+ <!--footer start-->
+  <section class="footer" id="footer">
+    <hr>
+    <hr>
+    <div class="center"><a href="../index.html"><img src="../../images/logo-3.PNG" alt="logo link"></a></div>  
+    <div class="container">
+      <ul>
+        <li><a href="https://www.linkedin.com/in/ryan-zurrin-586189128/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
+        <li><a href="https://www.facebook.com/ryanzurrin" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
+        <li><a href="https://twitter.com/ryan_zurrin" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+        <li><a href="https://github.com/RyanZurrin" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
+        <li><a href="https://www.freecodecamp.org/ryanzurrin" target="_blank"><i class="fa fa-code fa-2x"></i></a></li>
+        <li><a href="https://www.google.com" target="_blank"><i class="fa fa-search fa-2x"></i>
+      </ul>
+    </div>
+    <h4 class="center">Copyright &copy; <span id="copyright-year">2020</span> ryanzurrin.com  </h4><br>
+    <script>
+      document.querySelector('#copyright-year').innerText = new Date().getFullYear();
+    </script>
+  </section>
+
+  <footer><div class="text-center"></div></footer><br>
+  <!--<p class="text-center"><a href="#wrapper" class="gototop"><i class="fa fa-chevron-up fa-2"></i></a></p>-->
+
+  
+  
+  <div class="back-to-top-wrapper" id="back_top"><a href="#wrapper" data-scroll="#top" class="back-to-top" title="Back to top">
+    <svg viewBox="0 0 100 100" width="25" height="25" tabindex="-1" role="img" aria-labelledby="title"><title id="title">Back to top</title>
+    <path d="M10 50l50 50L70 90 30 50 70 10 60 0z" transform="translate(0 0) rotate(90 50 50)" fill="#fff" stroke="#fff"></path>
+    </svg></a>
+  </div>
+
+
+  <!--footer end-->     
+</div> 
+<!--wrapper end--> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+<script>
+    $(document).ready(function() {
+      $("footer div").html("This page was last modified on: "+document.lastModified);
+    });
+    
+</script>
+
+<!--jquary min js--> 
+<script   src="../js/jquery.min.js"></script> 
+
+
+
+<!--for theme custom jquery--> 
+<script src="../js/custom.js"></script>
+
+</body>
+</html>

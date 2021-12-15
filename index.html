@@ -2,9 +2,12 @@
 <!--
     filename: index.html
     edited by: Ryan Zurrin
-    edited on: 6/24/2020
-    discription: template used for the final project from 
-    "http://www.designstub.com/projects/folio-personal-portfolio-template/"
+    edited on: 7/27/2020
+    description: template used for the final project from 
+    "https://www.designstub.com/projects/folio-personal-portfolio-template/"
+    *****It was a bare bones template and I have been customizing and adding to it 
+         since i Downloaded the original code base. this site is now unique and not like the original
+         template  so if your looking for something on that link and it doesn't feel quite right, that is why.
 -->
 <!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
 <!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
@@ -15,23 +18,42 @@
 <!--<![endif]-->
 
 <head>
-  <link rel="shortcut icon" href="images/logofavicon32.ico" type="image/x-icon">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5M3DGZN');</script>
+  <!-- End Google Tag Manager -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168652707-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-168652707-3');
+</script>
+
+  <!-- setting Logo and character set for older IE versions-->
+  <link rel="shortcut icon" href="logo-good.ico" type="image/x-icon">
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- chrome=1"-->
   <!-- Metas Page details-->
   <title>Ryan Zurrin's Personal Portfolio Page</title>
   <meta name="description"
-    content="OnePage Resume Portfolio for Ryan Zurrin with Artwork, Woodworking projects and personal journal">
-  <meta name="Ryan Zurrin" content="Portfolio">
+    content="Ryan Zurrin, Resume & Portfolio with Artwork, Woodworking and Coding projects with personal journal">
+  <meta name="keywords" content="Ryan Zurrin, Web Designer Boston MA, Zurrin, Zurrin Programmer, web developer berkshires, BCC student, UMass Boston student">
+  <meta name="msaapplication-TileImage" content="logo-good.ico" />
   <!-- Mobile Specific Metas-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--main style-->
   <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
   <!--google font style-->
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <!--font-family: 'Metrophobic', serif;-->
-  <link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,600,400italic,600italic' rel='stylesheet'
+  <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,600,400italic,600italic' rel='stylesheet'
     type='text/css'>
   <!--font-family: 'Open Sans', sans-serif;-->
   <!-- font icon css style-->
@@ -39,6 +61,10 @@
 </head>
 
 <body onLoad="load()" onUnload="GUnload()">
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5M3DGZN"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <!-- Preloader -->
   <div id="preloader">
     <div id="status"></div>
@@ -87,18 +113,20 @@
       <!--banner start-->
       <div class="banner row" id="banner">
         <div class="bannerText">
-          <h1>I'm Ryan Zurrin</h1>
+          <h3>Hello World! My name is,</h3>      
+          <h1>Ryan Zurrin</h1>
+          <p>Future Software Engineer, Web Developer, and Lifelong Learner</p>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 noPadd slides-container" style="height:100%">
           <!--background slide show start-->
           <div class="slide">
-            <img src="images/header-image/ryanzpaintingshow.png" alt="Ryan Zurrin Painting"> </div>
+            <img loading="lazy" src="images/header-image/ryanzpaintingshow.png" alt="Ryan Zurrin Painting" width="100px"> </div>
           <div class="slide">
-            <img src="images/header-image/ryanzlookcool.png" alt="Ryan Zurrin with a painting"> </div>
+            <img loading="lazy" src="images/header-image/ryanzlookcool.png" alt="Ryan Zurrin with a painting"width="100px"> </div>
           <div class="slide">
-            <img src="images/header-image/ryanwaterfallhike.png" alt="Ryan Zurrin hiking "> </div>
+            <img loading="lazy" src="images/header-image/ryanwaterfallhike.png" alt="Ryan Zurrin hiking "width="100px"> </div>
           <div class="slide">
-            <img src="images/header-image/swampflower.JPG" alt="swamp lilly"> </div>
+            <img loading="lazy" src="images/header-image/swampflower.JPG" alt="swamp lilly"width="100px"> </div> 
           <!--background slide show end-->
         </div>
       </div>
@@ -119,55 +147,61 @@
           </div>
         </div>
         <div class="row">
-          <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right media"><img src="images/ryanzaboutme.jpg"
-              alt="ryan zurrin picture"></div>
+          <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right media"><img loading="lazy" src="images/ryanzaboutme.jpg"
+              alt="ryan zurrin picture"><br><br>
+              <p><a role="button" class="btn btn-primary btn-lg" href="https://gofund.me/650f7ba9" target="_blank"> 
+                <img src="images/gofundme.JPG" alt="Submit" width="265"> </a></p>
+              
+
+          </div>            
+
           <div class=" col-lg-7 col-md-7 col-sm-7 col-xs-12 pull-left media">
             <h5>Ryan Zurrin</h5>
-            <h4>Professional Father &amp; Full Time Student in the Computer Sciences</h4>
+            <h4>Father &amp; Full Time Student in the Computer Sciences</h4>
             <p> I'm Berkshire County born and raised, from the wonderful City of Pittsfield Massachusetts where
-              I currently reside and go to school at Berkshire Community College. I will be getting my
-              associates degree at BCC in Computer Science and will then be moving on to get a bachelors, and possibly
-              even a master's degree.
-              I've always loved computers and electronics, and just learning about how things work and function. My
-              curiosity
-              has carried me all over and has granted me the opportunity to try out many things before finally settling
-              with the computer sciences.
-              I originally considered starting school as a fine arts major, mostly because I have previous experience
-              painting and drawing already so
-              it made sense to me to start there. But then, when I got a position as a lab assistant in the Digital
-              Commons (BCC's computer lab),
-              something was rekindled within me. There lay dormant deep in the dust of my memories, a burning ember from
-              my youth.
-              Back then I gamed all the time and even built my first computer system when I was 15 (when 16Mb of Ram was
-              considered VERY fast). As well I remember
-              how much I loved exploring all the files and system configs and setting that made software work, it
-              fascinated me then - and still does to this day.
+              I recently graduated with a Associate in Science degree in computer science. I recently moved to Boston to pursue 
+              a Bachelor in Science degree, at the University of Massachusetts Boston.
+              I've always loved computers, electronics, and just learning how things work and function. 
+              My curiosities have allowed me to explore many avenues and have granted me the opportunity to try out many things before finally
+              settling with the Computer Sciences.
+              I originally stared school as a fine arts major. This was because of my previous experience
+              painting and drawing; it seemed to make sense for me to start there as being creative was one of my hobbies I wished to explore more.
+              Then, I landed a position as a lab assistant in the Digital Commons at Berkshire Community College,
+              and suddenly an old spark was rekindled within me; my early childhood passions for computers and software.
+              Back in my younger days I gamed all the time and even built a gaming computer system when I was a teen. I can remember
+              how much I loved upgrading hardware, installing games, exploring all the files and system configs and setting that made software work, it
+              fascinated me then, and still does to this day.
             </p>
-            <p>So, I made the switch from art classes to computer science classes (BIG SWITCH), where I hope to someday
-              become a programmer and software engineer. I am planning on using
-              the skills I obtain to help others build up their own ideas and dreams and I really feel using technology
-              as a medium is the best way to reach
-              the most people and the possibilities are truly endless, especially once you’re able to fuse old ideas
-              with the new technologies.
-              I, like most come from the ground up. I was built on the sweat and tears of my labor and it has carried me
-              here, to this moment, to school. Where I am learning
-              to do new things; like building this web page for instance, and I am learning most importantly that to
-              make the world a better place it takes a true team effort.
-              No one person, no matter how hard they may try, has the answer. But as a team working together, the
-              possible solutions become almost endless.
-              We live in a World that is a fusing of minds and ideas all built up around us, with another whole world of
-              ideas that I can fold up and bring with me anywhere.
-              It is this folded up dimension I am so hungry to learn about. I am looking forward to learning about
-              designing, debugging, and building
-              fast and efficient software and I’d be lying if I didn’t say, I think I may have gotten myself in a little
-              over my head with all this,
-              but I am up to a good challenge and I am ready to give this new life my all, and to do the hard work that
-              is required in building up a good solid foundation
-              from which I hope I can frame the rest of my life around.
+            <p>So, I made the switch from art classes to computer science classes. Where now I hope to someday
+              become a professional programmer and software developer/engineer. I am planning on using
+              the skills I obtain to help others build their own ideas and dreams and I really feel using technology
+              as a medium is one of the best ways to reach as many people as possible. With technology the possibilities are truly endless, 
+              especially if you’re able to fuse old ideas with the new technologies.<br>
+              Like many before me, I am starting from the ground up. My success is built on the sweat and tears of my labor and hard work. 
+              My ambition and determination have carried me to this moment, to academia, and to want more for myself.
+              I am now learning to do new and wondrous things; like building this web page for instance. Or learning about algorithms and how to use them,
+              or how to implement data structures to simplify and abstract away complexity of certain tasks. 
+              Most importantly though,  I am learning  that to make the world a better place takes a team effort.
+              No one person, no matter how hard they may try, has all the answers. But as a team working together, the
+              possible solutions and ideas become almost endless.
+             </p>
+
+             <p> We live in a world that is a fusing of minds and ideas all built up in the material space around us; with another whole world of
+              ideas that now exists in a digital dimension where fast access to information and data rule supreme.
+              It is this digital dimension I am so hungry to learn about. I am looking forward to learning about,
+              devising new ideas, designing safer solutions, and even debugging software so that I can build fast and efficient programs and tools for professionals and individuals to 
+              use in their own practices. 
+              I am ready and willing to push through the coming challenges that await me, and I am ready to give this new life my all and to do the hard work that
+              is required in building up a good solid foundation.
+              A foundation from which I know that I can frame the rest of my future around.
             </p>
 
+            <p><a role="button" class="btn btn-primary btn-lg" href="BCC_Transcript.pdf" target="_blank">Download
+                Transcript, Associate in Science, CIS</a></p>
             <p><a role="button" class="btn btn-primary btn-lg" href="work_experience.pdf" target="_blank">Download
-                Printable Resume</a></p>
+                 Work Experience</a></p>
+            <p><a role="button" class="btn btn-primary btn-lg" href="resume2021.pdf" target="_blank">Download
+                 Resume</a></p>
           </div>
 
         </div>
@@ -181,99 +215,87 @@
           <div class="col-md-12">
             <div class="heading">
               <h2>Skills &amp; Experience</h2>
-              <h3>I can say i’m quite good at</h3>
             </div>
           </div>
           <div class="col-md-12">
             <div class="col-md-6 col-sm-12 media">
               <p>
-                I have over 15 years of House Painting and General Property Maintenance experience. I've worked for
+                Over 15 years of House Painting and General Property Maintenance experience. I've worked for
                 various employers and companies over the years,
-                all of which helped in building my current skillset and experience. This has taught me there is always
+                all of which helped in building my current skill-set and experience. Big take away is there is usually
                 more than one way to get the same job done.
-                As well, I maintained my own painting business lasting around three years; ‘All About Painting’. An
-                invaluable life experience is what that was.
-                I have done a fair share of plumbing and light carpentry work as well.
-                The one thing I can say I learned from all this; it doesn’t matter what path you decide to take in life,
-                If you are
-                going to succeed and be truly great at what you do, it is going to take a lot of hard work and
-                dedication to achieve.
-                Nothing in life comes easy, nothing….
+                I also maintained my own painting business for three years; ‘All About Painting’. A
+                very valuable life experience.
+                Also I have done a fair share of plumbing and carpentry work.
+                The one thing I can say is, it doesn’t matter what path you decide to take in life,
+                if you are going to succeed and be truly great at what you do, it is going to take a lot of hard work and
+                dedication to achieve. Nothing good in life comes easy, nothing...
               </p>
 
               <p>
-                ....and to that; these Skill Bars are a reflection of the hard work I have put into becoming good in
-                certain areas, some better than others,
-                but I will be updating them all to reflect my new skills as I begin to further my education in the
-                computer sciences.
-                As a student about to take my first programmimng classes I feel these bars will be slowly shifting more
-                in favor of the
-                coding and web design. I hope to add more skills to this list as well. So keep checking back! Or if you
-                are an employer looking for
-                a good employee within a certain technology or framework, please send me a message and I am always open
-                to learning new
-                things on the fly or as needed. I truly believe
-                the best way to learn anything in life is by rolling up your sleeves and digging in, whether it
-                be digging in dirt or debugging dirty code, the only way to learn is to do. So let's do!
+                ...and to that, these Skill Bars reflect the hard work I have put into becoming good at
+                certain things.
+                I will be updating this section to reflect my new skills as I begin to further my education in the
+                Computer Sciences. So keep checking back! This list of skills will be growing and changing as I do.
+                I truly believe
+                the best way to learn anything in life is by rolling up your sleeves and digging in. Whether it
+                be digging in the dirt or debugging dirty code, the only way to learn is to do! 
               </p>
-              <p>To note, the skill bar percentages are just picked based on how I feel I perform in these areas and are
+              <p>On that note, the skill bar percentages are just picked based on how I feel I perform in these areas and are
                 not decided based on any real
                 scientific or substantial method that would validate their accuracy. It is meant more as a rough gauge
                 of
                 my skills based on my intuition about these subjects and not meant to be an absolute fact. I don't want
-                anyone mislead. </p>
+                anyone mislead. These values are represented as followed: 0% knows nothing up to 100% being a Jedi Master </p>              
             </div>
+            
             <div class="col-md-6 col-sm-12 topelement">
-              <div class="skillbar clearfix " data-percent="89%">
-                <div class="skillbar-title"><span>House Painting / Maintaince</span></div>
+              
+
+              <div class="skillbar clearfix " data-percent="80%">
+                <div class="skillbar-title"><span>HTML (5)</span></div>
                 <div class="skillbar-bar"></div>
                 <div class="skill-bar-percent"></div>
               </div> <!-- End Skill Bar -->
 
-              <div class="skillbar clearfix " data-percent="84%">
-                <div class="skillbar-title"><span>Drawing / Painting</span></div>
+              <div class="skillbar clearfix " data-percent="65%">
+                <div class="skillbar-title"><span>CSS (3)</span></div>
                 <div class="skillbar-bar"></div>
                 <div class="skill-bar-percent"></div>
               </div> <!-- End Skill Bar -->
 
-              <div class="skillbar clearfix " data-percent="63%">
-                <div class="skillbar-title"><span>Woodworking</span></div>
+              <div class="skillbar clearfix " data-percent="25%">
+                <div class="skillbar-title"><span>JS (ES6+)</span></div>
                 <div class="skillbar-bar"></div>
                 <div class="skill-bar-percent"></div>
               </div> <!-- End Skill Bar -->
 
-              <div class="skillbar clearfix " data-percent="72%">
-                <div class="skillbar-title"><span>HTML</span></div>
+              <div class="skillbar clearfix " data-percent="80%">
+                <div class="skillbar-title"><span>WordPress / CMS</span></div>
                 <div class="skillbar-bar"></div>
                 <div class="skill-bar-percent"></div>
               </div> <!-- End Skill Bar -->
 
               <div class="skillbar clearfix " data-percent="50%">
-                <div class="skillbar-title"><span>CSS</span></div>
+                <div class="skillbar-title"><span>C (C99,C11)</span></div>
                 <div class="skillbar-bar"></div>
                 <div class="skill-bar-percent"></div>
               </div> <!-- End Skill Bar -->
 
-              <div class="skillbar clearfix " data-percent="24%">
-                <div class="skillbar-title"><span>JavaScript</span></div>
+              <div class="skillbar clearfix " data-percent="70%">
+                <div class="skillbar-title"><span>C++98 - C++20</span></div>
                 <div class="skillbar-bar"></div>
                 <div class="skill-bar-percent"></div>
               </div> <!-- End Skill Bar -->
 
-              <div class="skillbar clearfix " data-percent="33%">
-                <div class="skillbar-title"><span>C++</span></div>
+              <div class="skillbar clearfix " data-percent="50%">
+                <div class="skillbar-title"><span>Python (3+)</span></div>
                 <div class="skillbar-bar"></div>
                 <div class="skill-bar-percent"></div>
               </div> <!-- End Skill Bar -->
 
-              <div class="skillbar clearfix " data-percent="18%">
-                <div class="skillbar-title"><span>Python</span></div>
-                <div class="skillbar-bar"></div>
-                <div class="skill-bar-percent"></div>
-              </div> <!-- End Skill Bar -->
-
-              <div class="skillbar clearfix " data-percent="15%">
-                <div class="skillbar-title"><span>Java</span></div>
+              <div class="skillbar clearfix " data-percent="60%">
+                <div class="skillbar-title"><span>Java (SE 8 - SE 11)</span></div>
                 <div class="skillbar-bar"></div><br>
                 <div class="skill-bar-percent"></div><br>
               </div> <!-- End Skill Bar -->
@@ -284,29 +306,48 @@
                 <div class="skill-bar-percent"></div><br>
               </div> <!-- End Skill Bar -->
 
-              <div class="skillbar clearfix " data-percent="72%">
-                <div class="skillbar-title"><span>Excel</span></div>
-                <div class="skillbar-bar"></div><br>
-                <div class="skill-bar-percent"></div><br>
-              </div> <!-- End Skill Bar -->
-
-              <div class="skillbar clearfix " data-percent="88%">
-                <div class="skillbar-title"><span>PowerPoint</span></div>
-                <div class="skillbar-bar"></div><br>
-                <div class="skill-bar-percent"></div><br>
-              </div> <!-- End Skill Bar -->
-
-              <div class="skillbar clearfix " data-percent="93%">
-                <div class="skillbar-title"><span>Word</span></div>
+              <div class="skillbar clearfix " data-percent="90%">
+                <div class="skillbar-title"><span>Excel / Sheets</span></div>
                 <div class="skillbar-bar"></div><br>
                 <div class="skill-bar-percent"></div><br>
               </div> <!-- End Skill Bar -->
 
               <div class="skillbar clearfix " data-percent="90%">
-                <div class="skillbar-title"><span>Learning</span></div>
+                <div class="skillbar-title"><span>PowerPoint / Slides</span></div>
+                <div class="skillbar-bar"></div><br>
+                <div class="skill-bar-percent"></div><br>
+              </div> <!-- End Skill Bar -->
+
+              <div class="skillbar clearfix " data-percent="95%">
+                <div class="skillbar-title"><span>Word / Docs / Forms</span></div>
+                <div class="skillbar-bar"></div><br>
+                <div class="skill-bar-percent"></div><br>
+              </div> <!-- End Skill Bar -->
+
+              <div class="skillbar clearfix " data-percent="85%">
+                <div class="skillbar-title"><span>House Painting / Maintenance</span></div>
                 <div class="skillbar-bar"></div>
                 <div class="skill-bar-percent"></div>
               </div> <!-- End Skill Bar -->
+
+              <div class="skillbar clearfix " data-percent="80%">
+                <div class="skillbar-title"><span>Drawing / Painting</span></div>
+                <div class="skillbar-bar"></div>
+                <div class="skill-bar-percent"></div>
+              </div> <!-- End Skill Bar -->
+
+              <div class="skillbar clearfix " data-percent="60%">
+                <div class="skillbar-title"><span>Woodworking</span></div>
+                <div class="skillbar-bar"></div>
+                <div class="skill-bar-percent"></div>
+              </div> <!-- End Skill Bar -->
+
+              <div class="skillbar clearfix " data-percent="100%">
+                <div class="skillbar-title"><span>Living & Learning</span></div>
+                <div class="skillbar-bar"></div>
+                <div class="skill-bar-percent"></div>
+              </div> <!-- End Skill Bar -->
+
             </div>
           </div>
         </div>
@@ -326,24 +367,61 @@
         <div class="row media">
           <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
             <div class="expertiesico">
-              Jan, 2018<br>Current
+              June, 2020<br>Current
+            </div>
+          </div>
+          <div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
+            <h4>Freelance Web developer and designer</h4>
+            <h5>HighREZ Design Studioz, Owner</h5>
+            <p>Building Business and event webpages. Helping customers starting with a free consultation and then taking them through
+              every step as we put together requirements that bring to life the visions and ideas that make them unique and different. 
+              Using this as a launchpad we build up a brand on their new site using cutting edge frameworks and lightening fast CMS
+              platforms I am able to achieve quick and responsive results in less time and money than it may take 
+              from a bigger less personal Web page marketing company. Using this and the new skills I've recently learned in school 
+              I decided to build a business model that was both doable and something I feel is greatly in demand. With this I welcome you 
+              to my new business landing page <a href="https://www.highrezstudioz.com" target="_blank"><span>HighREZ Design Studioz</span></a>. 
+            </p>
+          </div>
+        </div>
+
+        <div class="row media">
+          <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+            <div class="expertiesico">
+              June 28, 2021 <br>August 28, 2021
+            </div>
+          </div>
+          <div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
+            <h4>Technology Intern</h4>
+            <h5><a href="https://www.nrm.org" target="_blank">Norman Rockwell Museum</a></h5>
+            <p>I managed a number of projects ranging from a massive inventory and audit of all computer and a
+               audio/visual technology in Museum, to provisioning computers and mobile devices for digital experiences,
+               wiring the Museum, beta-testing virtual exhibitions and setting up bug tracking software for it, 
+               and setting up and breaking down AV tech for complex hybrid public programs each week. 
+            </p>
+          </div>
+        </div>
+
+        <div class="row media">
+          <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+            <div class="expertiesico">
+              January 2018<br>2020
             </div>
           </div>
           <div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
             <h4>Work Study</h4>
-            <h5>IT Department, Computer Lab Assistant </h5>
-            <p>Working around computers and helping fix problems, with computers... talk about a dream job! These are
-              both great steppingstones and a true blessing and I was
-              lucky to get in with the Lab and IT department at BCC. Being involved in the behind the scenes action has
-              been a very enlightening experience. We have responsibilities
-              such as imaging new computers, setting up and doing any deployments of machines, helping fix slow or not
-              working machines and making sure the computers are
-              in smooth and efficient running order; these are our basic tasks. Other tasks include naming and adding
-              computers to the domain as well getting the default printers set
-              and all the proper software being used installed and registered. In the Lab we made sure anyone needing
-              any kind of help, such as logging into accounts
-              getting pdfs to print or setting the printer up to print a certain way. Just basic stuff to help out and
-              keep things running smoothly.
+            <h5>IT Department (2019-2020), Computer Lab Assistant (2018-2019) </h5>
+            <p>Working around computers and helping fix problems, with computers. These are
+              great steppingstones and I was
+              lucky to get in with the Lab and IT department at BCC. Being involved in the behind-the-scenes action has
+              been a very enlightening experience. My responsibilities included things like
+              imaging new computers, setting up and deploying computers for staff and students, helped to fix slow or not
+              working machines and made sure the computers were
+              in smooth and efficient running order. These were my basic tasks; other tasks included naming and adding
+              computers to the schools domain, as well set up the default printers and
+              any of the software being used, and had to make sure it was all registered and working.<br> 
+              In the Lab we made sure anyone needing any kind of help got it. Included such things as how to log into accounts,
+              getting pdf's to print properly as well as setting the printer up to print for specific and unique tasks. 
+              A lot of very basic stuff to help out and keep things running smoothly.
             </p>
           </div>
         </div>
@@ -358,16 +436,15 @@
             <h5>Painter/Plumber/Landscaper</h5>
             <p>Most of my early adult hood and late teens was spent doing work that required a bit of physical
               dexterity. Everything from cleaning and installing big oil furnaces to weeding
-              gardens, if there was something that needed a fixing or required attention then I was there doing the job.
+              gardens and planting shrubbery. If there was something that needed to be fixed or required attention then I was there doing the job.
               I loved the fact that I could get payed to help people do
-              the things That I loved doing. This was especially true of house painting. I painted houses more than
-              anything else, even starting my own business for a short few years.
-              As well during the winter months when the painting got slow, I was able to get work for a master plumber
-              where we would winterize homes and install gas furnaces and rough in
-              new plumbing that would be needed. Everything from measuring out the pipe and cleaning and fluxing for
-              solder to testing the whole plumbing and heating systems.
-              It was all great experience and was really preparing me for a strong discipline within an academic
-              setting.
+              the things that most people would not want to do. This was especially true of house painting. I painted houses more than
+              anything else, even started my own business for a few years.
+              During winter months when the painting got slow, I was able to get work for a Plumber
+              where we would winterize homes and install gas furnaces as well as install bathroom and kitchen plumbing fixtures
+              including any new plumbing that would be needed. We did everything from measuring and treading pipe, to cleaning, fluxing,
+              soldering, all the way up to final testing that would be done on the plumbing and heating systems.
+              It was all great experience and has really prepared me to apply a strong discipline within my academics.
             </p>
           </div>
         </div>
@@ -380,13 +457,16 @@
           <div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
             <h4>Entry Level Jobs</h4>
             <h5>Cashier / Stocker / Customer Service / Food Service / Tree Service</h5>
-            <p>During the early days I started out working just like anybody really. I Had a couple jobs at the local
+            <p>During the early years I started out working just like most average people did. I Had a couple jobs at the local
               mall where I was able to start gaining experience in various work-related
-              tasks and more importantly, I was able to gain experience in interacting with people. I worked at hotdog
+              tasks and more importantly, I was able to gain experience with interacting with people. I worked at hotdog
               stands and retail stores as well as supermarkets and hardware stores.
-              My early experience was all over and I am very grateful for it now, looking back at the lessons in
-              retrospect everything that’s ever happened to me has brought me to now, a place where
-              I can start working towards a greater good that helps humanity as a whole.
+              My early experience was all across the board and I am very grateful for it now. Looking back at the lessons I learned,
+              only now in retrospect is it clear that everything that has ever happened to me has brought me to this point now.
+              And regardless of the mistakes made, I can honestly say I am grateful for it all as even in the mistakes were 
+              valuable lessons learned that can never be taken from me. My experience is diverse and unique and has built in mne
+              character and strength. It is now, that I can finally see the bigger picture and start working towards a greater 
+              good bigger then myself, a greater good that ultimately helps everyone around me and possibly even humanity as a whole.
             </p>
           </div>
         </div>
@@ -396,86 +476,151 @@
 
 
     <!--Education & diploma start -->
-    <section id="education" class="educationdiploma">
+    <section class="educationdiploma" id="education">
       <div class="container">
-        <div class="heading">
-          <h2>Education &amp; Achievements</h2>
-          <h3>My life's greatest accomplishments outside of being a Dad.</h3>
+      <div class="heading">
+      <h2>Education &amp; Achievements</h2>
+      
+      <h3>My life's greatest accomplishments outside of being a Dad.</h3>
+      </div>
+
+      <div class="row media">
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+        <div class="expertiesico">Transferred to University of Massachusetts Boston<br />
+        September 1st, 2021<br> Projected Graduation: Spring 2023</div>
+        </div>
+        
+        <div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
+        <h4>Started my Undergraduate Studies in Computer Science</h4>
+        
+        <h5>Working towards receiving my degree of, Bachelor in Science</h5>
+        
+        <p>I am very excited to announce that I have been given an amazing opportunity to pursue my
+          advanced degree in the field of Computer Science at the University of Massachusetts in 
+          Boston, MA. I am now living in Boston, surrounded by an 
+          amazing city filled with opportunity. There are far more internships and tech companies available in
+          Boston and I plan on securing some experience in a professional setting before I finish my degree.
+          I plan to work hard and use every chance available to grow and learn. 
+          This chapter of my life will be a key component in my coming success and the bedrock I build the rest of my future on. 
+          There is only one goal for me now, and that is to achieve my dream of becoming an experienced and working software engineer.</p>
+        </div>
+        </div>
+      
+      <div class="row media">
+      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+      <div class="expertiesico">January, 2018<br />
+      Graduated: Spring 2021</div>
+      </div>
+      
+      <div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
+      <h4><a href="https://www.berkshirecc.edu/academics/programs-and-classes/computer-information-systems/certificate-options/computer-science-option-as-degree.php" target="_blank">Computer Information Systems</a></h4>
+      
+      <h5>Associates in Computer Information Systems (CS) / Certificate in Computer Programming - Technical</h5>
+      
+      <p>Having chosen the Computer Science path in the CIS degree program I have gained a
+         much deeper and broader understanding of the way computer systems work and function.
+          There was heavy emphasis on mathematics and the curriculum was designed to prepare  
+          students to move on to a baccalaureate institution for further study.</p>
+      <h5>Update: Graduated with an Associates in Science in Computer Information Systems and a Certificate in Computer Programming</h5>
+      <p>I will be transferring in the Fall 2021 to the University of Massachusetts Boston to 
+        finish up my studies and work towards receiving my Bachelor in Science in Computer Science. I am proud of 
+        my choice ultimately as it was the one that fit my budget. I am proud to say that I was accepted into some 
+        pretty amazing schools such as Rensselaer Polytechnic Institute, Worcester Polytechnic Institute,
+        Wentworth Institute of Technology, to name a few. Though these schools would of been amazing to
+        attend I unfortunately would of had too much unmet financial obligations.
+        But as I like to say, it's not the school that makes the man, its the man that makes the school.
+        So here I come UMass Boston, ready to learn and be that Beacon!
+      </p>
+        
+      &nbsp;
+      
+      <h5>Current GPA: 3.689 [-.057 from last semester]</h5>
+      </div>
+      </div>
+
+      <div class="row media">
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+        <div class="expertiesico">CIS Program Award<br />
+        April 29th, 2021</div>
+        </div>
+        
+        <div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
+        <h4>Awarded the CIS Program Award for 2021</h4>
+        
+        <h5>Departmental Awards are given each year to top students within each field of study</h5>
+        
+        <p>I was beyond honored and humbled to have been chosen as the award recipient for the 
+          2021 Program award in the Computer Information Systems discipline. I have always had a 
+          fondness for computers and how they worked and even would spend my allowance money as a 
+          kid on books ranging from hardware repair to programming topics like c++. Now to be fully
+          emerged within the field feels like I have truly found my way home. Computation and problem 
+          solving is just a built-in function of my brain for which now I have the skills to transfer
+          this into working programs for computers! This truly is one of my life's biggest Joys,
+          and to get recognition for all the hard work feels nothing short of amazing.</p>
+        </div>
         </div>
 
-        <div class="row media">
-          <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-            <div class="expertiesico">
-              January, 2018<br> Projected Graduation: fall 2021
-            </div>
-          </div>
-          <div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
-            <h4><a
-                href="https://www.berkshirecc.edu/academics/programs-and-classes/computer-information-systems/certificate-options/computer-science-option-as-degree.php"
-                target="_blank"> Computer Information Systems</a></h4>
-            <h5>Associates in Computer Science</h5>
-            <p>Having chosen the Computer Science option in the CIS degree program I have gained a much deeper and
-              broader understanding of the
-              way computer systems work and function. There was heavy emphasis on mathematics and the curriculum was
-              designed to prepare students to move on
-              to a baccalaureate institution for further study. Being in the beginning classes I still have a lot of
-              classes to go before I am able to graduate.
-              The plan is a 2021 graduation and I will be applying to transfer to another institution very soon.
-          </div>
-        </div>
-        <div class="row media">
-          <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-            <div class="expertiesico">
-              Inducted on:<br> April, 2019<br>
-            </div>
-          </div>
-          <div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
-            <h4><a href="https://www.berkshirecc.edu/academics/honors/phi-theta-kappa.php" target="_blank">Phi Theta
-                Kappa</a></h4>
-            <h5>Xi Alpha - Berkshire County Chapter</h5>
-            <p>Due to my outstanding grades and my dedicated pursuit for a higher education, I was invited to join the
-              PTK which is the 'International Honor society of American Community and Junior Colleges.'
-              You are expected to uphold a high standard for yourself and to keep your grades and your GPA up. I am
-              presently being recruited to take on more leadership
-              rolls within the chapter. Becoming a Phi Theta Kappa member has really shown be that I am far more capable
-              then I ever realized. To be 100% honest, I truly surprise
-              myself with the things I am currently achieving and I am beyond humbled and grateful and my new found
-              recognitions.
-            </p>
-            <h5>UPDATE</h5>
-            <p>
-              I am now the VP of Communications for the Xi Alpha chapter at BCC!
-            </p>
-            <h5>Current GPA: 3.711 [-.007]</h5>
-          </div>
-        </div>
-        <div class="row media">
-          <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-            <div class="expertiesico">
-              STEM - Fall 2018<br>TRIo - Summer 2018
-            </div>
-          </div>
-          <div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
-            <h4><a href="https://www.berkshirecc.edu/academics/stem/stem-starter-academy/" target="_blank">STEM Starter
-                Academy</a> /
-              <a href="https://www.berkshirecc.edu/student-engagement/the-trio-program/" target="_blank">TRIo
-                Program</a> /
-              <a href="http://jordanchretien.site/finalproject/index.html" target="_blank"> Robotics Club</a></h4>
-            <h5>College Support Groups and Extracurricular Activities</h5>
-            <p>Being actively involved with programs and activities that are there on campus is a good way to build up
-              interpersonal skills and relationships.
-              Having access to information, resources and to members in the technology fields is very helpful when
-              learning about new and exciting things.
-              I've been very lucky to be able to have so many great people supporting me and my continued education.
-              Being a non-traditional student has made
-              it a bit difficult at times when it comes to learning new complex ideas and just having a place to turn to
-              get the help needed has been a key
-              component in my successful restructuring.
-            </p>
-          </div>
-        </div>
+      
+      
+      <div class="row media">
+      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+      <div class="expertiesico">Honors Convocation<br />
+      October 18, 2018</div>
       </div>
-    </section>
+      
+      <div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
+      <h4>Academic Excellence in Collegiate Studies</h4>
+      
+      <h5>Received awards for doing well in my studies</h5>
+      
+      <p>This was an amazing feeling to be recognized for doing a good job. I have never had a 
+        chance before now to experience anything like that and I was so amazed and excited to 
+        have had that opportunity. I also receive a Falconer Award in Fine Arts around this
+         time as well. This was because I first started as a Fine Arts major before moving 
+         to CS.</p>
+      </div>
+      </div>
+      
+      <div class="row media">
+      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+      <div class="expertiesico">Inducted on:<br />
+      April, 2019</div>
+      </div>
+      
+      <div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
+      <h4><a href="https://www.berkshirecc.edu/academics/honors/phi-theta-kappa.php" target="_blank">Phi Theta Kappa</a></h4>
+      
+      <h5>Xi Alpha - Berkshire County Chapter</h5>
+      
+      <p>Due to outstanding grades, I was invited to join the PTK which is the &#39;International Honor society of American Community and Junior Colleges.&#39; 
+        I was VP of Communications for the Xi Alpha chapter at BCC! 2019 semester. Our officer team took our chapter from a one star to a five-star chapter.
+         Our Honors in action project was about the impacts of community policing and how it helps bring together the community and cops in a more trusting 
+         and meaningful manner. Part of this project was a big boot and shoe drive that was supported and sponsored by the local police departments Officer 
+         Derby, a leader on the front lines of community policing</p>
+      </div>
+      </div>
+      
+      <div class="row media">
+      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+      <div class="expertiesico">STEM - 2019 - 2020<br />
+      TRiO - 2018 - 2020<br />
+      Robotics Club 2019</div>
+      </div>
+      
+      <div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
+      <h4><a href="https://www.berkshirecc.edu/academics/stem/stem-starter-academy/" target="_blank">STEM Starter Academy</a> / <a href="https://www.berkshirecc.edu/academics/academic-support/the-trio-program/" target="_blank">TRIo Program</a> / <a href="http://jordanchretien.site/finalproject/index.html" target="_blank"> Robotics Club</a></h4>
+      
+      <h5>College Support Groups and Extracurricular Activities</h5>
+      
+      <p>Being actively involved with programs and activities that are there on campus is a good way to build up interpersonal skills and relationships. 
+        Having access to information, resources and to members in the technology fields is very helpful when learning about new and exciting things. 
+        I&#39;ve been very lucky to be able to have so many great people supporting me and my continued education. Being a non-traditional student has
+         made it a bit difficult at times when it comes to learning new complex ideas and just having a place to turn to get the help needed has been a key 
+         component in my successful restructuring.</p>
+      </div>
+      </div>
+      </div>
+      </section>
     <!--Education & diploma end -->
 
 
@@ -485,6 +630,7 @@
         <div class="heading">
           <h2>Portfolio</h2>
           <h3>Things I have made throughout my life</h3>
+          <p>Click a button to open images</p>
         </div>
       </div>
       <div class="row">
@@ -504,7 +650,7 @@
             <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon">
                   <a href="images/projects/big-images/roughbellabox.jpg" title="Sun And Moon Keepsake box"
                     class="zoom lb lb_warsaw1">
-                    <i class="fa fa-plus fa-2x"></i></a> </span> </span> <img
+                    <i class="fa fa-plus fa-2x"></i></a> </span> </span> <img loading="lazy"
                 src="images/projects/thumb-images/roughbellaboxthumb.jpg" alt="keepsake box">
             </div>
           </li>
@@ -513,16 +659,16 @@
             <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon">
                   <a href="images/projects/big-images/funguywindow.jpg"
                     title="Acrylic Painting 'Mushroom Moon Cabin' 9'x13'" class="zoom lb lb_warsaw1">
-                    <i class="fa fa-search fa-2x"></i></a> </span> </span> <img
+                    <i class="fa fa-search fa-2x"></i></a> </span> </span> <img loading="lazy"
                 src="images/projects/thumb-images/funguywindowthumb.jpg" alt="acrylic painting">
             </div>
           </li>
 
           <li class="miscellaneous col-xs-6 col-sm-4 col-md-3 col-lg-3">
             <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon">
-                  <a href="images/projects/big-images/wirewrap.jpg" title="Tailsman Wirewraped crystals"
+                  <a href="images/projects/big-images/wirewrap.jpg" title="Talisman Wiretapped crystals"
                     class="zoom lb lb_warsaw1">
-                    <i class="fa fa-search fa-2x"></i></a> </span> </span> <img
+                    <i class="fa fa-search fa-2x"></i></a> </span> </span> <img loading="lazy"
                 src="images/projects/thumb-images/wirewrapthumbnail.jpg" alt="crystal wirewrap">
             </div>
           </li>
@@ -531,7 +677,7 @@
             <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon">
                   <a href="images/projects/big-images/heatherhat1.jpg" title="Hand Painted Grateful Dead Hat"
                     class="zoom lb lb_warsaw1">
-                    <i class="fa fa-search fa-2x"></i></a> </span> </span> <img
+                    <i class="fa fa-search fa-2x"></i></a> </span> </span> <img loading="lazy"
                 src="images/projects/thumb-images/heatherhat1thumb.jpg" alt="hand painted hat">
             </div>
           </li>
@@ -541,7 +687,7 @@
                   <a href="images/projects/big-images/robot2.jpg"
                     title=" TheGFF(the green firefighting falcon): autonomous firefighting robot"
                     class="zoom lb lb_warsaw1">
-                    <i class="fa fa-search fa-2x"></i></a> </span> </span> <img
+                    <i class="fa fa-search fa-2x"></i></a> </span> </span> <img loading="lazy"
                 src="images/projects/thumb-images/robot2thumb.jpg" alt="small arduino based autonomous robot">
             </div>
           </li>
@@ -550,7 +696,7 @@
             <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon">
                   <a href="images/projects/big-images/gratefulbox1.jpg"
                     title="Gratefuldead marquetry keepsake box with key" class="zoom lb lb_warsaw1">
-                    <i class="fa fa-search fa-2x"></i></a> </span> </span> <img
+                    <i class="fa fa-search fa-2x"></i></a> </span> </span> <img loading="lazy"
                 src="images/projects/thumb-images/heathersboxthumb.jpg" alt="gratefuldead marquetry keepsake box">
             </div>
           </li>
@@ -559,7 +705,7 @@
             <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon">
                   <a href="images/projects/big-images/newpainting.jpg" title="13x9 acrylic, Midnight DreamScape"
                     class="zoom lb lb_warsaw1">
-                    <i class="fa fa-search fa-2x"></i></a> </span> </span> <img
+                    <i class="fa fa-search fa-2x"></i></a> </span> </span> <img loading="lazy"
                 src="images/projects/thumb-images/newpaintingthumb.jpg" alt="acrylic painting 13x9">
             </div>
           </li>
@@ -568,7 +714,7 @@
             <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon">
                   <a href="images/projects/big-images/fishheart.jpg"
                     title="Father Son themed drawing for Drawing II class" class="zoom lb lb_warsaw1">
-                    <i class="fa fa-search fa-2x"></i></a> </span> </span> <img
+                    <i class="fa fa-search fa-2x"></i></a> </span> </span> <img loading="lazy"
                 src="images/projects/thumb-images/fishheartthumb.jpg"
                 alt="father and son fishing poles in shape of heart">
             </div>
@@ -578,7 +724,7 @@
             <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon">
                   <a href="images/projects/big-images/ryanzhat2.jpg" title="The first hat I ever painted"
                     class="zoom lb lb_warsaw1">
-                    <i class="fa fa-search fa-2x"></i></a> </span> </span> <img
+                    <i class="fa fa-search fa-2x"></i></a> </span> </span> <img loading="lazy"
                 src="images/projects/thumb-images/ryanzhat2thumb.jpg" alt="My first hand painted hat ever">
             </div>
           </li>
@@ -588,7 +734,7 @@
                   <a href="images/projects/big-images/bigwild.jpg"
                     title="Eyes all Over - this painting was started live as a performance piece at BellaTerra Festival"
                     class="zoom lb lb_warsaw1">
-                    <i class="fa fa-search fa-2x"></i></a> </span> </span> <img
+                    <i class="fa fa-search fa-2x"></i></a> </span> </span> <img loading="lazy"
                 src="images/projects/thumb-images/bigwildthumb.JPG" alt="Big Crazy acrylic painting">
             </div>
           </li>
@@ -597,8 +743,8 @@
             <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon">
                   <a href="images/projects/big-images/latchbox2.jpg" title="marquetry Keepsake Box"
                     class="zoom lb lb_warsaw1">
-                    <i class="fa fa-search fa-2x"></i></a> </span> </span> <img
-                src="images/projects/thumb-images/latchbox2thumb.jpg" alt="keepsake box wiith marquetry design">
+                    <i class="fa fa-search fa-2x"></i></a> </span> </span> <img loading="lazy"
+                src="images/projects/thumb-images/latchbox2thumb.jpg" alt="keepsake box with marquetry design">
             </div>
           </li>
 
@@ -606,7 +752,7 @@
             <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon">
                   <a href="images/projects/big-images/tabledrawing.jpg" title="not so classic still life"
                     class="zoom lb lb_warsaw1">
-                    <i class="fa fa-search fa-2x"></i></a> </span> </span> <img
+                    <i class="fa fa-search fa-2x"></i></a> </span> </span> <img loading="lazy"
                 src="images/projects/thumb-images/tabledrawingthumb.jpg" alt="charcoal drawing of table">
             </div>
           </li>
@@ -615,7 +761,7 @@
             <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon">
                   <a href="images/projects/big-images/deadboxtop.jpg" title="Grateful Compass Marquetry keepsake box"
                     class="zoom lb lb_warsaw1">
-                    <i class="fa fa-search fa-2x"></i></a> </span> </span> <img
+                    <i class="fa fa-search fa-2x"></i></a> </span> </span> <img loading="lazy"
                 src="images/projects/thumb-images/deadboxtopthumb.jpg" alt="keepsake box">
             </div>
           </li>
@@ -624,7 +770,7 @@
             <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon">
                   <a href="images/projects/big-images/shoes.jpg"
                     title="These shoes where made for drawing - charcoal and pastel" class="zoom lb lb_warsaw1">
-                    <i class="fa fa-search fa-2x"></i></a> </span> </span> <img
+                    <i class="fa fa-search fa-2x"></i></a> </span> </span> <img loading="lazy"
                 src="images/projects/thumb-images/shoesthumb.jpg" alt="shoe drawing">
             </div>
           </li>
@@ -632,8 +778,8 @@
           <li class="arduino col-xs-6 col-sm-4 col-md-3 col-lg-3">
             <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon">
                   <a href="images/projects/big-images/arduinocar.jpg"
-                    title="Robot car project using arduino - in progress stil" class="zoom lb lb_warsaw1">
-                    <i class="fa fa-search fa-2x"></i></a> </span> </span> <img
+                    title="Robot car project using arduino - in progress still" class="zoom lb lb_warsaw1">
+                    <i class="fa fa-search fa-2x"></i></a> </span> </span> <img loading="lazy"
                 src="images/projects/thumb-images/arduinocarthumb.jpg" alt="arduino robot car">
             </div>
           </li>
@@ -642,7 +788,7 @@
             <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon">
                   <a href="images/projects/big-images/gdbolt.jpg"
                     title="Acrylic on Canvas Grateful Dead Art with hand made frame" class="zoom lb lb_warsaw1">
-                    <i class="fa fa-search fa-2x"></i></a> </span> </span> <img
+                    <i class="fa fa-search fa-2x"></i></a> </span> </span> <img loading="lazy"
                 src="images/projects/thumb-images/gdboltthumb.jpg" alt="grateful dead painting">
             </div>
           </li>
@@ -651,7 +797,7 @@
             <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon">
                   <a href="images/projects/big-images/galacticsunflower.jpg"
                     title="Acrylic on Canvas 'Galactic Sunflower'" class="zoom lb lb_warsaw1">
-                    <i class="fa fa-search fa-2x"></i></a> </span> </span> <img
+                    <i class="fa fa-search fa-2x"></i></a> </span> </span> <img loading="lazy"
                 src="images/projects/thumb-images/galacticsunflowerthumb.jpg"
                 alt="Acrylic painting of galactic sunflower">
             </div>
@@ -661,7 +807,7 @@
             <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon">
                   <a href="images/projects/big-images/deadboxtop2.jpg" title="Keepsake gem box with Dead Bolt"
                     class="zoom lb lb_warsaw1">
-                    <i class="fa fa-search fa-2x"></i></a> </span> </span> <img
+                    <i class="fa fa-search fa-2x"></i></a> </span> </span> <img loading="lazy"
                 src="images/projects/thumb-images/deadboxtop2thumb.jpg" alt="crystal box">
             </div>
           </li>
@@ -670,7 +816,7 @@
             <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon">
                   <a href="images/projects/big-images/ryderbox.jpg" title="Box with sons photo on top"
                     class="zoom lb lb_warsaw1">
-                    <i class="fa fa-search fa-2x"></i></a> </span> </span> <img
+                    <i class="fa fa-search fa-2x"></i></a> </span> </span> <img loading="lazy"
                 src="images/projects/thumb-images/ryderboxthumb.jpg" alt="keepsake box">
             </div>
           </li>
@@ -679,7 +825,7 @@
             <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon">
                   <a href="images/projects/big-images/bbgloves.jpg"
                     title="Father and Son baseball gloves, pastel on newsprint." class="zoom lb lb_warsaw1">
-                    <i class="fa fa-search fa-2x"></i></a> </span> </span> <img
+                    <i class="fa fa-search fa-2x"></i></a> </span> </span> <img loading="lazy"
                 src="images/projects/thumb-images/bbglovesthumb.jpg" alt="pastel drawing">
             </div>
           </li>
@@ -703,24 +849,61 @@
             <th class="col-xs-8 col-sm-8 col-md-8">Title </th>
             <th class="col-xs-2 cols-sm-2 col-md-2">Topic </th>
             <!--<th class="col-xs-1 cols-sm-1 col-md-1">Format(s) </th>-->
+
+            <tr class="container">
+              <td class="col-xs-2 col-sm-2 col-md-2">6/4/2021</td>
+              <td class="col-xs-8 col-sm-8 col-md-8"><a href="journal/journal_java.html">Java programs</a></td>
+              <td class="col-xs-2 col-sm-2 col-md-2">Java</td>
+              <!-- <td class="col-xs-1 cols-sm-1 col-md-1">HTML; MP4 </td>-->
+            </tr>                
+
+            <tr class="container">
+              <td class="col-xs-2 col-sm-2 col-md-2">6/4/2021</td>
+              <td class="col-xs-8 col-sm-8 col-md-8"><a href="journal/journal_datastructures.html">Data Structures and ADT's</a></td>
+              <td class="col-xs-2 col-sm-2 col-md-2">C++</td>
+              <!-- <td class="col-xs-1 cols-sm-1 col-md-1">HTML; MP4 </td>-->
+            </tr>            
+
+            <tr class="container">
+              <td class="col-xs-2 col-sm-2 col-md-2">8/4/2020</td>
+              <td class="col-xs-8 col-sm-8 col-md-8"><a href="journal/cppTwoList.html">C++ II Programs, classes</a></td>
+              <td class="col-xs-2 col-sm-2 col-md-2">C++</td>
+              <!-- <td class="col-xs-1 cols-sm-1 col-md-1">HTML; MP4 </td>-->
+            </tr>
+
+            <tr class="container">
+              <td class="col-xs-2 col-sm-2 col-md-2">7/13/2020</td>
+              <td class="col-xs-8 col-sm-8 col-md-8"><a href="https://www.berkshirebuilders623.com" target="_blank">Berkshire Builders 623</a></td>
+              <td class="col-xs-2 col-sm-2 col-md-2">Web Page</td>
+              <!-- <td class="col-xs-1 cols-sm-1 col-md-1">HTML; MP4 </td>-->
+            </tr>
+            
+          </tr>
+          <tr class="container">
+            <td class="col-xs-2 col-sm-2 col-md-2">7/2/2020</td>
+            <td class="col-xs-8 col-sm-8 col-md-8">
+              <a href="https://docs.google.com/spreadsheets/d/1CkqK_uiDaHqN8SLlrvMJTQDqydCYCJNCqrl_Ln4WJl0/edit?usp=sharing" target="_blank">
+                Google Sheets, Team Tally Sheet</a></td>
+            <td class="col-xs-2 col-sm-2 col-md-2">Previous work</td>
+            <!-- <td class="col-xs-1 cols-sm-1 col-md-1">HTML; MP4 </td>-->
           </tr>
 
             <tr class="container">
-              <td class="col-xs-2 col-sm-2 col-md-2">6/22/20</td>
+              <td class="col-xs-2 col-sm-2 col-md-2">6/22/2020</td>
               <td class="col-xs-8 col-sm-8 col-md-8"><a href="journal/journal_addresstheTimes.html">Addressing the Times</a></td>
               <td class="col-xs-2 col-sm-2 col-md-2">Current Events</td>
               <!-- <td class="col-xs-1 cols-sm-1 col-md-1">HTML; MP4 </td>-->
             </tr>
 
           <tr class="container">
-            <td class="col-xs-2 col-sm-2 col-md-2">12/25/19</td>
+            <td class="col-xs-2 col-sm-2 col-md-2">12/25/2019</td>
             <td class="col-xs-8 col-sm-8 col-md-8"><a href="journal/cppOneList.html">Simple C++ Programs</a></td>
-            <td class="col-xs-2 col-sm-2 col-md-2">C++ Programs</td>
+            <td class="col-xs-2 col-sm-2 col-md-2">C++</td>
             <!-- <td class="col-xs-1 cols-sm-1 col-md-1">HTML; MP4 </td>-->
           </tr>
 
           <tr class="container">
-            <td class="col-xs-2 col-sm-2 col-md-2">12/18/19</td>
+            <td class="col-xs-2 col-sm-2 col-md-2">12/18/2019</td>
             <td class="col-xs-8 col-sm-8 col-md-8"><a href="journal/digitalCircuitsFinal.html">Coffee/Cocoa Vending
                 Machine Circuit design</a></td>
             <td class="col-xs-2 col-sm-2 col-md-2">School Project</td>
@@ -728,28 +911,28 @@
           </tr>
 
           <tr class="container">
-            <td class="col-xs-2 col-sm-2 col-md-2">8/14/19</td>
+            <td class="col-xs-2 col-sm-2 col-md-2">8/14/2019</td>
             <td class="col-xs-8 col-sm-8 col-md-8"><a href="journal/accountability.html">Accountability</a></td>
             <td class="col-xs-2 col-sm-2 col-md-2">Self Help</td>
             <!-- <td class="col-xs-1 cols-sm-1 col-md-1">HTML; MP4 </td>-->
           </tr>
 
           <tr class="container">
-            <td class="col-xs-2 col-sm-2 col-md-2">6/1/19</td>
+            <td class="col-xs-2 col-sm-2 col-md-2">6/1/2019</td>
             <td class="col-xs-8 col-sm-8 col-md-8"><a href="journal/journal_imposter.html">Feeling Like a Fake</a></td>
             <td class="col-xs-2 col-sm-2 col-md-2">Mental Health</td>
             <!-- <td class="col-xs-1 cols-sm-1 col-md-1">HTML; MP4 </td>-->
           </tr>
 
           <tr class="container">
-            <td class="col-xs-2 col-sm-2 col-md-2">5/12/19</td>
+            <td class="col-xs-2 col-sm-2 col-md-2">5/12/2019</td>
             <td class="col-xs-8 col-sm-8 col-md-8"><a href="journal/journal_deeplearning.html">Understanding On a Deeper
                 Level</a></td>
             <td class="col-xs-2 col-sm-2 col-md-2">Education</td>
             <!-- <td class="col-xs-1 cols-sm-1 col-md-1">HTML; MP4 </td>-->
           </tr>
           <tr class="container">
-            <td class="col-xs-2 col-sm-2 col-md-2">5/11/19</td>
+            <td class="col-xs-2 col-sm-2 col-md-2">5/11/2019</td>
             <td class="col-xs-8 col-sm-8 col-md-8"><a href="journal/journal_designphase_good.html">The Whole Design
                 Phase Write Up</a></td>
             <td class="col-xs-2 col-sm-2 col-md-2">Web Design</td>
@@ -767,20 +950,16 @@
           <h2>Where To Find Me </h2>
           <h3>You can use the map below to find how far I am, simply sign-in or view larger map and using your current
             location
-            get the distance to<br> West Street Pittsfield, MA 01201.
+            get the distance to<br> University of Massachusetts Boston.
           </h3>
-          <p>In future updates to this page I will be working on using google map api's to hopefully bring you that
-            information automatically.</p>
         </div>
       </div>
       <!--google map start-->
       <div class="mapArea center">
-
-        <iframe class="center"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5887.93820489851!2d-73.26628377452047!3d42.44967350489726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1557524992747!5m2!1sen!2sus"
-          style="border:0" allowfullscreen></iframe>
-
-      </div>
+        <iframe class="center" 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2950.3275751842434!2d-71.03872474891111!3d42.31421144588608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37afb848c801f%3A0x8b627c28a174fb5b!2sUniversity%20of%20Massachusetts%20Boston!5e0!3m2!1sen!2sus!4v1634407957795!5m2!1sen!2sus"
+           width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
       <!-- google map end-->
     </section>
     <section class="contactDetails">
@@ -795,9 +974,9 @@
             <div id="message"></div>
             <form method="POST" action="https://fp1.formmail.com/cgi-bin/fm192" name="contactform" id="contactform">
               <input name="name" id="name" type="text" class="col-xs-12 col-sm-12 col-md-8 col-lg-8" tabindex="1"
-                placeholder="Your name">
+                placeholder="Your name" required>
               <input name="email" id="email" type="email" class=" col-xs-12 col-sm-12 col-md-8 col-lg-8 noMarr"
-                tabindex="2" placeholder="Your email">
+                tabindex="2" placeholder="Your email" required>
               <textarea name="comments" id="comments" cols="1" rows="1" class="col-xs-12 col-sm-12 col-md-8 col-lg-8"
                 tabindex="3" placeholder="Your message"></textarea>
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><input type="submit" id="submit" name="send"
@@ -807,10 +986,20 @@
               <input type="hidden" name="_fid" value="ZOH5VHN7">
               <input type="hidden" name="recipient" value="1">
               <input type="hidden" name="subject" value="contact">
-              <input type="hidden" name="redirect" value="http://www.ryanzurrin.com/contactthankyou.html">
+              <input type="hidden" name="redirect" value="https://www.ryanzurrin.com/contactthankyou.html">
               <input type="hidden" name="env_report" value="REMOTE_ADDR,HTTP_USER_AGENT">
             </form>
           </div>
+        </div>
+        <br><br>
+        <div class="row media">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 conForm text-center">
+            <div id="message"></div>
+        <form method="POST" action="https://calendly.com/ryanzurrin/30min" name="calendlyLink" id="calendlyLink">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><input type="submit" id="calendly" name="calendly"
+            class="submitBnt" value="Schedule Consultation"></div>
+        </form>
+        </div>
         </div>
         <!--contact form end-->
       </div>
@@ -821,8 +1010,6 @@
   <section class="footer" id="footer">
     <h3 class="center">Social Media Links</h3><br>
 
-
-
     <div class="container">
       <ul>
         <li><a href="https://www.linkedin.com/in/ryan-zurrin-586189128/" target="_blank"><i
@@ -830,7 +1017,7 @@
         <li><a href="https://www.facebook.com/ryanzurrin" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
         <li><a href="https://twitter.com/ryan_zurrin" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
         <li><a href="https://github.com/RyanZurrin" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
-        <li><a href="https://www.freecodecamp.org/highrez" target="_blank"><i class="fa fa-code fa-2x"></i></a></li>
+        <li><a href="https://www.freecodecamp.org/ryanzurrin" target="_blank"><i class="fa fa-code fa-2x"></i></a></li>
         <li><a
             href="https://www.google.com/search?sxsrf=ACYBGNRO5tweKHjhR1tReumjg2c26eYnKw%3A1578044414792&source=hp&ei=_gsPXqz6Lca-tQWppYmACw&q=Ryan+Zurrin&oq=Ryan+Zurrin&gs_l=psy-ab.3..35i39.17551.19639..19973...3.0..0.91.907.11......0....1..gws-wiz.....10..35i362i39j0j0i131j0i10j0i22i30j0i13j0i13i5i30.75XmNBx0TDs&ved=0ahUKEwis8Z_GkefmAhVGX60KHalSArAQ4dUDCAc&uact=5"
             target="_blank"><i class="fa fa-search fa-2x"></i>
@@ -839,12 +1026,15 @@
     </div>
 
 
-  </section><br>
-  <h4 class="center">Copyright &copy; 2019, 2020 ryanzurrin.com </h4><br>
+  </section>
+  <br>
+  <h4 class="center">Copyright &copy; <span id="copyright-year">2020</span> ryanzurrin.com  </h4><br> <!--2021 ryanzurrin.com-->
+  <script>
+    document.querySelector('#copyright-year').innerText = new Date().getFullYear();
+  </script>
 
   <br>
-  <p class="text-center"><a href="#wrapper" class="gototop"><i class="fa fa-chevron-up fa-2"></i></a></p>
-
+  
   <div class="back-to-top-wrapper" id="back_top"><a href="#wrapper" data-scroll="#top" class="back-to-top"
       title="Back to top">
       <svg viewBox="0 0 100 100" width="25" height="25" tabindex="-1" role="img" aria-labelledby="title">
@@ -864,7 +1054,7 @@
 
   <!--wrapper end-->
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
   </script>
   <script>
     $(document).ready(function () {
@@ -922,7 +1112,7 @@
 
   <!--contact form js-->
   <script src="js/jquery.contact.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBR5ZhjG2hAtCNRTKj9JMb79OW8bES0iEc"></script>
   <script>
     // When the window has finished loading create our google map below
     google.maps.event.addDomListener(window, 'load', init);
@@ -935,12 +1125,24 @@
         zoom: 11,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(42.449736, -73.266432), // New York
+        center: new google.maps.LatLng(-23.507900, -46.588612), // Boston
         scrollwheel: false,
         // How you would like to style the map. 
         // This is where you would paste any style found on Snazzy Maps.
-        styles: [{ "featureType": "water", "elementType": "geometry", "stylers": [{ "color": "#e9e9e9" }, { "lightness": 17 }] }, { "featureType": "landscape", "elementType": "geometry", "stylers": [{ "color": "#f5f5f5" }, { "lightness": 20 }] }, { "featureType": "road.highway", "elementType": "geometry.fill", "stylers": [{ "color": "#ffffff" }, { "lightness": 17 }] }, { "featureType": "road.highway", "elementType": "geometry.stroke", "stylers": [{ "color": "#ffffff" }, { "lightness": 29 }, { "weight": 0.2 }] }, { "featureType": "road.arterial", "elementType": "geometry", "stylers": [{ "color": "#ffffff" }, { "lightness": 18 }] }, { "featureType": "road.local", "elementType": "geometry", "stylers": [{ "color": "#ffffff" }, { "lightness": 16 }] }, { "featureType": "poi", "elementType": "geometry", "stylers": [{ "color": "#f5f5f5" }, { "lightness": 21 }] }, { "featureType": "poi.park", "elementType": "geometry", "stylers": [{ "color": "#dedede" }, { "lightness": 21 }] }, { "elementType": "labels.text.stroke", "stylers": [{ "visibility": "on" }, { "color": "#ffffff" }, { "lightness": 16 }] }, { "elementType": "labels.text.fill", "stylers": [{ "saturation": 36 }, { "color": "#333333" }, { "lightness": 40 }] }, { "elementType": "labels.icon", "stylers": [{ "visibility": "off" }] }, { "featureType": "transit", "elementType": "geometry", "stylers": [{ "color": "#f2f2f2" }, { "lightness": 19 }] }, { "featureType": "administrative", "elementType": "geometry.fill", "stylers": [{ "color": "#fefefe" }, { "lightness": 20 }] }, { "featureType": "administrative", "elementType": "geometry.stroke", "stylers": [{ "color": "#fefefe" }, { "lightness": 17 }, { "weight": 1.2 }] }]
-      };
+        styles: [{ "featureType": "water", "elementType": "geometry", "stylers": [{ "color": "#e9e9e9" }, { "lightness": 17 }] }, 
+        { "featureType": "landscape", "elementType": "geometry", "stylers": [{ "color": "#f5f5f5" }, { "lightness": 20 }] }, 
+        { "featureType": "road.highway", "elementType": "geometry.fill", "stylers": [{ "color": "#ffffff" }, { "lightness": 17 }] },
+         { "featureType": "road.highway", "elementType": "geometry.stroke", "stylers": [{ "color": "#ffffff" }, { "lightness": 29 }, 
+         { "weight": 0.2 }] }, { "featureType": "road.arterial", "elementType": "geometry", "stylers": [{ "color": "#ffffff" },
+          { "lightness": 18 }] }, { "featureType": "road.local", "elementType": "geometry", "stylers": [{ "color": "#ffffff" },
+           { "lightness": 16 }] }, { "featureType": "poi", "elementType": "geometry", "stylers": [{ "color": "#f5f5f5" }, { "lightness": 21 }] },
+            { "featureType": "poi.park", "elementType": "geometry", "stylers": [{ "color": "#dedede" }, { "lightness": 21 }] },
+             { "elementType": "labels.text.stroke", "stylers": [{ "visibility": "on" }, { "color": "#ffffff" }, { "lightness": 16 }] },
+              { "elementType": "labels.text.fill", "stylers": [{ "saturation": 36 }, { "color": "#333333" }, { "lightness": 40 }] },
+               { "elementType": "labels.icon", "stylers": [{ "visibility": "off" }] }, { "featureType": "transit", "elementType": "geometry", "stylers": [{ "color": "#f2f2f2" },
+                { "lightness": 19 }] }, { "featureType": "administrative", "elementType": "geometry.fill", "stylers": [{ "color": "#fefefe" }, { "lightness": 20 }] },
+                 { "featureType": "administrative", "elementType": "geometry.stroke", "stylers": [{ "color": "#fefefe" }, { "lightness": 17 }, { "weight": 1.2 }] }]
+         };
 
       // Get the HTML DOM element that will contain your map 
       // We are using a div with id="map" seen below in the <body>
@@ -949,11 +1151,9 @@
       // Create the Google Map using our element and options defined above
       var map = new google.maps.Map(mapElement, mapOptions);
 
-
-
       // Let's also add a marker while we're at it
       var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(42.449736, -73.266432),
+        position: new google.maps.LatLng(-23.507900, -46.588612),
         map: map,
         title: 'Hello!'
       });

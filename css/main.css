@@ -229,16 +229,15 @@ header{
 	width:100%;
 	position:absolute ;
 	left:0;
-	top:50%;
+	top:75%;
 	text-align:center;
-	margin-top:-35px;
 	padding:0 ;
 	z-index:999 ;
 }
 .bannerText h1{
 	text-transform:uppercase;
 	line-height:normal;
-	font-weight:300;
+	font-weight:bold;
 	color:#fff;
 	letter-spacing:4px;
 }
@@ -251,7 +250,9 @@ header{
 	margin-bottom:20px;
 	letter-spacing:2px;
 }
-
+.bannerText p{
+	letter-spacing:1px;
+}
 
 /*----------------------------------------------------
  	3.1 Menu Style
@@ -1354,7 +1355,11 @@ a.back-to-top svg {
 -------------------------------------------------------------------------------*/
 
 
-@media screen and (min-width: 1000px) {
+@media screen and (max-width: 1000px) {
+	#loopedSlider, #newsSlider{
+		width: 50%;
+		height: 50%;
+	}
 	.workYear{
 		width:140px;
 		height:140px;
@@ -1369,13 +1374,7 @@ a.back-to-top svg {
 
 @media screen and (max-width: 995px) {
 
-	.bannerText h1{
-		font-size:65px;
-		line-height:71px;
-	}
-	.bannerText h2{
-		font-size:28px;
-	}
+	
 	.proPic{
 		text-align:center;
 	}
@@ -1491,6 +1490,12 @@ a.back-to-top svg {
 
 	
 }
+@media all and (max-width:750px) {
+	img {
+		display:block;
+		margin:0 auto;
+	}
+}
 
 
 @media screen and (max-width: 767px) {
@@ -1553,6 +1558,10 @@ a.back-to-top svg {
 	.conForm .submitBnt {
 		width:100%;
 	}
+	img {
+		display:block;
+		margin:0 auto;
+	}
 }
 
 
@@ -1574,12 +1583,16 @@ a.back-to-top svg {
 		padding-bottom:15px;
 	}
 	.bannerText h1 {
-		font-size: 42px;
-		line-height: 48px;
+		font-size: 20px;
+		line-height: 20px;
 	}
 	.bannerText h3 {
-		font-size: 28px;
+		font-size: 15px;
 		line-height: normal;
+	}
+	.bannerText p {
+		font-size: 10px;
+		line-height: -5px;
 	}
 	.bannerText h2 {
 		font-size: 18px;
