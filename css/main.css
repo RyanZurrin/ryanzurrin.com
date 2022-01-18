@@ -57,6 +57,10 @@ a {
 img {
 	max-width:100%;
 }
+.center img {
+	display:block;
+	margin:0 auto;
+}
 
 
 /*----------------------------------------------------
@@ -84,6 +88,7 @@ p{
 	font-weight:400;
 	padding-bottom:33px;
 	margin:0px;
+	text-align:justify;
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	color:#f1f0f0;	
@@ -240,6 +245,7 @@ header{
 	font-weight:bold;
 	color:#fff;
 	letter-spacing:4px;
+	margin-bottom:0;
 }
 .bannerText h3{
 	color:#fff;
@@ -247,11 +253,13 @@ header{
 	line-height:normal;
 	font-weight:400;
 	text-transform:none;
-	margin-bottom:20px;
+	margin-bottom:0px;
 	letter-spacing:2px;
 }
 .bannerText p{
 	letter-spacing:1px;
+	/*center p banner text is important*/
+	text-align:center;
 }
 
 /*----------------------------------------------------
@@ -287,6 +295,20 @@ header{
 	width:123px;
 	height:80px;
 	font-size:0;
+	line-height:0;
+	color: #bab4bb
+}
+
+.footerLogo{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	height: 100%;
+	background:url(../images/logo-3_new3.PNG) no-repeat 0 0;
+	
+	width:400px;
+	height:400px;
 	line-height:0;
 	color: #bab4bb
 }
@@ -634,6 +656,11 @@ nav a:hover {
 	padding-bottom:0 ;
 	margin-bottom:-20px;
 }
+.dl-buttons {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 
 /*----------------------------------------------------
@@ -721,7 +748,7 @@ nav a:hover {
 
 .portfolioFilter ul li a.current{
 	border:solid 1px #fff;
-	color: #f2f2f2;;
+	color: #f2f2f2;
 }
 ul.portfolioContainer{
 	display:block;
@@ -1486,6 +1513,24 @@ a.back-to-top svg {
 	}
 	.navbar-header .navbar-brand{
 		float:right;
+	}
+	/*change the paragraph font size*/
+	p{
+		font-size:16px;
+	}
+	.footerLogo {
+		width: 100%;
+		height: auto;
+	}
+	.data-filter a{
+		/* fill width of screen with buttons*/
+		display: block;
+		width: 100%;
+		height: auto;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		width: 100%;
+		font-size: 18px;
 	}
 
 	
