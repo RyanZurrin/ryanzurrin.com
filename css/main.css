@@ -88,7 +88,7 @@ p{
 	font-weight:400;
 	padding-bottom:33px;
 	margin:0px;
-	text-align:justify;
+	/*text-align:justify;*/
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	color:#f1f0f0;	
@@ -341,10 +341,11 @@ header{
 }
 .navbar.navbar-inverse.navbar-static-top a.closeMenu:hover {
 	background:none;
-	color: #00bdbd;
+	color: #00bdbd !important;
 }
 .isStuck .navbar.navbar-inverse.navbar-static-top a.closeMenu:hover{
 	background:none;
+	color: #00bdbd !important;
 	
 }
 .closeMenu i {
@@ -352,11 +353,14 @@ header{
 	line-height:32px;
 	color:#fff;
 }
+.closeMenu:hover i {
+	color: #00bdbd !important;
+}
 .isStuck .navbar.navbar-inverse.navbar-static-top a.closeMenu {
-	border-color:#fff;
+	border-color:#29212a;
 }
 .isStuck .navbar.navbar-inverse.navbar-static-top a.closeMenu i {
-	color:#fff;
+	color:#29212a;
 }
 .navbar-header{
 	display:none;
@@ -404,7 +408,7 @@ nav a:hover {
 .navbar.navbar-inverse.navbar-static-top {
   margin:0px auto;
   background:none;
-  color:#181a1c;
+  color:#29222a;
   border:none;
   font-family: 'Open Sans', sans-serif;
   font-size:14px;
@@ -433,12 +437,12 @@ nav a:hover {
 	display:none;
 }
 .isStuck .navbar-inverse .navbar-nav>.active>a, .isStuck .navbar-inverse .navbar-nav>.active>a:focus{
-  background: #181a1c;
+  background: #29222a;
   color:#fff ;
 }
 .isStuck .navbar.navbar-inverse.navbar-static-top a:hover{
-  background:#181a1c;
-  color:#fff;
+  background:#29222a;
+  color: #00bdbd !important;
 }
 .isStuck .navbar.navbar-inverse.navbar-static-top a{
   color:#1d1d1d;
@@ -527,7 +531,7 @@ nav a:hover {
 	border-radius: 0;
 }
 .aboutus .btn-primary:hover {
-	color:#979497;
+	color:#00bdbd;
 }
 
 /*----------------------------------------------------
@@ -1053,7 +1057,10 @@ th {
 	height:52px;
 }
 .conForm .submitBnt:hover{
-	color:#000;
+	color:#00bdbd;
+}
+.nav-icon .fa-bars:hover {
+	color: #00bdbd;
 }
 
 .textGroup{
@@ -1142,7 +1149,6 @@ th {
 	height:80%;
 }
 #map img { max-width: none; }
-
 
 
 
@@ -1476,7 +1482,7 @@ a.back-to-top svg {
 		width: 100%;
 		left: 0;
 		color:#fff;
-		background:#181a1c;
+		background:#29222a;
 		text-align:center;
 	}
 	.nav > li > a {
