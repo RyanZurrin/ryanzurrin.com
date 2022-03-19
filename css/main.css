@@ -83,7 +83,7 @@ img {
 }
 
 p{
-	font-size:13px;
+	font-size:calc(.6vw + .6vh + .28vmin);
 	line-height:27px;
 	font-weight:400;
 	padding-bottom:33px;
@@ -95,7 +95,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 h1{
 	font-family: 'Montserrat', sans-serif;
-	font-size:33px;
+	font-size:calc(.8vw + .8vh + .38vmin);
 	line-height:76px;
 	font-weight:400;
 	margin:0px;
@@ -171,7 +171,7 @@ h5{
 	margin-left:-38px;
 }
 .heading h3{
-	font-size:18px;
+	font-size:calc(.75vw + .75vh + .34vmin);
 	line-height:30px;
 	color:#efe4f0;
 	padding-bottom:0;
@@ -633,7 +633,7 @@ nav a:hover {
 	padding-bottom:0;
 }
 .expertiesdesc h4 {
-	font-size:14px;
+	font-size:calc(.8vw + .8vh + .36vmin);
 	font-weight:300;
 	color:#f2f2f2;
 	line-height:normal;
@@ -643,7 +643,7 @@ nav a:hover {
 .expertiesdesc h5 {
 	font-family: 'Crimson Text', serif;
 	color:#f2f2f2;
-	font-size:18px;
+	font-size:calc(.7vw + .7vh + .32vmin);;
 	font-style:italic;
 	font-weight:400;
 }
@@ -728,7 +728,7 @@ nav a:hover {
 }
 .portfolioFilter ul li a{
 	padding:16px 30px;
-	font-size:11px;
+	font-size:calc(.5vw + .5vh + .28vmin);
 	line-height:15px;
 	font-weight:bold;
 	color:#f2f2f2;
