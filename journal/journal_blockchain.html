@@ -21,8 +21,8 @@
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- chrome=1"-->
 <!-- Metas Page details-->
-<title>Building a Blockchain - Ryan Zurrin</title>
-<meta name="description" content="blockchain technology, how to build your own blockchain based technology">
+<title>SimpleSwapV1 - Ryan Zurrin</title>
+<meta name="description" content="blockchain technology, how to build an automated market maker">
 <meta name="Ryan Zurrin" content="Journal">
 <!-- Mobile Specific Metas-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -52,13 +52,210 @@
 <div class="wrapper noGap" id="wrapper"></div>
   <div class="container">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-      <div class="heading"><h2>Blockchain technology</h2>
-        <h3>What it is and how you can build your own</h3><hr>
+      <div class="heading"><h2><a href="https://github.com/RyanZurrin/SimpleSwap">SimpleSwapV1</a></h2>
+        <h3>Automated Market Maker (AMM)</h3><hr>
       </div>
       <div>
-        <h4 class="center">A quick history of blockchain technology</h4>
-        <h5>CONTENT COMING SOON</h5>
-        <p>Thank you for being patient as I work on building this page</p>
+        <h4 class="center">What are AMMs? Learn by Building a simple project 
+          from following along to this 
+          <a href="https://learn.figment.io/tutorials/create-an-amm-on-avalanche" target="_blank">Avalanche tutorial</a>
+        </h4>
+        <h5>Introduction</h5>
+        <p>
+          SimpleSwapV1 is an automated market maker (AMM) simulator, as it does not
+          currently support ERC20 tokens and instead uses two tokens that are built 
+          into the smart contract itself. It was built primarily to help us understand 
+          the components and mechanisms that are the cornerstones of modern decentralized
+          exchanges (DEXs). AMMs are smart contracts that live on the blockchain and
+          are therefore safe, transparent, and trustless which are some key aspects 
+          of blockchain technology (Tran & Krishnamachari, 2022). 
+          Being transparent means that they are visible to anyone who wishes
+          to view them, making them very trustworthy and desirable for
+          use in such things as financial trading and token exchanges.
+          Before AMMs were used there were more traditional methods used 
+          for token exchanges such as order book systems. Some immediate 
+          draw backs of these traditional order book exchanges are that they 
+          work in such a way that buy and sell orders must be matched before 
+          being finalized which can take a lot of time, especially in low liquidity 
+          situations where trade activity is low. These delays from when orders are 
+          placed and when they are added to the blockchain and officially logged 
+          into a transaction ledger have the potential to cause price fluctuations 
+          and price differences from the expected buy/sell values which were initially 
+          anticipated. This is commonly referred to as price slippage or slippage (Coinbase, n.d.). 
+          Another huge disadvantage of the traditional order book system being used with 
+          smart contracts is that there is the possibility of very high gas fees per 
+          transaction (Hendy, 2021). To help lower the chances of slippage and reduce 
+          high gas fees from happening there needed to be a new method for traders to 
+          buy and sell, and one of the main methods recently implemented to achieve 
+          this has been the Automated Market Makers, or what are more commonly called AMM’s.
+        </p>
+        <h5>How AMMs Work</h5>
+        <p>
+          Let us begin by understanding AMMs in general, which will help us to better understand 
+          SImpleSwapV1, and then we will dive into the specifics of how SimpleSwapV1 works. 
+          In general, AMM’s allow for trading between two tokens in such a way that the transaction 
+          of the trade is executed nearly instantly. This helps to lower any fluctuations from the 
+          anticipated price of the order thus by helping to
+          reduce the price slippage that is common in traditional order book exchanges (Hendy, 2021). 
+          This is achieved with the use of a couple important components, one being that of a liquidity pool. 
+          This is a pool of trade tokens that are provided by liquidity providers who are given incentivize to 
+          add to this pool. A couple common incentives are things like free tokens, and most commonly a share 
+          of the transaction fees on each transaction as well. Shares earned are determined by the amount of 
+          liquidity one provides to the pool and the total shares one owns of the pools total value 
+          (Sergeenkov, 2021).
+        </p>
+        <p>
+          Another one of the key components is the algorithmic formula that is used to balance the 
+          token prices in the liquidity pool thus by eliminating discrepancies in the prices of 
+          pooled assets. One such formula is 𝑥∗𝑦=𝑘, where x and y are representative of the two 
+          tokens and k is some constant that must always be maintained throughout the swaps and 
+          exchanges between the two tokens. This 𝑥∗𝑦=𝑘 is a preset mathematical equation which is 
+          used in other common AMMs such as Uniswap (Sergeenkov, 2021). We can better understand 
+          how this formula works using a simple example. Taking the two tokens present in the 
+          SimpleSwapV1 contract REZ and ABR, which also uses this same 𝑥∗𝑦=𝑘, as its preset 
+          mathematical equation. When REZ is purchased by traders ABR is then added to the pool 
+          and the equivalent REZ is thus removed from the pool. The fact that REZ was removed 
+          from the pool has the effect of increasing the price of REZ to maintain the balancing 
+          effect of the 𝑥∗𝑦=𝑘 formula. This also means that the price of the ABR will decrease 
+          because there was more of it added to the pool. If the operations were the reverse, it 
+          would cause the opposite effect, meaning REZ would drop and ABR would increase. 
+          This is the basics of how the algorithmic formula maintains balance of a liquidity 
+          pool (Sergeenkov, 2021).
+        </p>
+        <h5>Disadvantages to AMMs</h5>
+        <p>
+          There is a major drawback to the providers of a liquidity pool that is worth mentioning here. 
+          This is something known as impermanent loss, and if you are familiar with lending to 
+          liquidity pools you have probably already heard this term. What impermanent loss is in 
+          a nutshell, is what price someone will receive when they attempt to withdraw their 
+          shares from a pool. This is important because with liquidity pools you need to consider 
+          the fact that the bigger the difference is in their original deposit price and the 
+          withdraw price, the more the liquidity provider stands to lose when they withdraw. 
+          You may wonder why anyone will want to provide to a pool if they would end up losing money 
+          when they want to withdraw, but usually the fees earned, and the rewards gained from providing 
+          will outweigh the impairment loss which could transpire, especially with high 
+          volume trading token pools.
+        </p>
+        <h5>Looking at SimpleSwapV1, an AMM simulator</h5>
+        <p>
+          Now that we understand the basics of AMMs and what problem they are solving in the Decentralized
+          Finance (DeFi) crypto space, lets take a closer look at SimpleSwapV1 and how it works to help
+          us to better understand the basic operations of AMMs and the key components that are the 
+          foundational technology driving modern DEX markets. SimpleSwapV1 is a smart contract built 
+          on top of the Avalanche Blockchain and tested using their test net. Instructions on connecting 
+          to this test net have been included in the projects GitHub repositories readme.md file as well 
+          as detailed instructions outlining how to clone and build the code on their local computers, 
+          giving anyone who wishes, the full setup of how to use this project and test it themselves.
+        </p>
+        <p>
+          SimpleSwapV1, being a simple simulator is not an actual AMM, in that it does not allow one 
+          to connect different tokens to it. It was built primarily as a learning tool, to help us better 
+          understand what core functionality is needed when implementing AMM’s. There is a lot of moving 
+          pieces inside these AMM smart contracts that needed to be considered, and to implement all the 
+          moving pieces in a way that worked correctly took a lot of testing and research. The first step 
+          was to understand all the different components that would be needed, for this it helped us to 
+          consider the main functionality of an AMM and what it needed to do. In our SimpleSwapV1 AMM 
+          there was one main task essentially, to allow for the trading of two tokens from a liquidity 
+          pool. That meant we would need to start there, with two tokens and a pool to maintain the balance. 
+          To maintain the balance, we would need to use the predetermined mathematical formula. After 
+          testing a few different options, such as 2𝑥∗ 13𝑦=𝑘, where I was trying to lessen the steepness 
+          of the curve thinking that it may make for smoother and less steep price fluctuations at either 
+          end of the pool’s boundaries, or the formula 𝑥2∗ 𝑦2 = k for which I was pushing the boundary of 
+          one out very far meaning that there was going to be very lopsided exchanges happening and I 
+          basically decided to just settle on the 𝑥∗𝑦=𝑘 as it was much easier to implement and when 
+          balancing the pools during swaps, there did not seem to be drastic and odd fluctuations that 
+          did not make sense.
+        </p>
+        <p>
+          Once we had this established, we needed to consider what else we would need to make this work. 
+          Seems it was not actually going to be a ERC20 token supported contract, and the fact we would 
+          just be building the tokens into the contract itself we would then need to have some mechanism 
+          for which we could provide someone attempting to use the contract a way to get themselves some 
+          REZ and ABR tokens. For this we have the faucet method that allows someone to specify how much 
+          of each token they want. Once someone has some tokens of each, there then needed to be a way for 
+          someone to provide liquidity to the pool so that they could then simulate swaps between the two 
+          tokens, and for this we would add the provide method. On the very first time someone is adding 
+          liquidity to the pool, they can specify how much of each token they wish to add, thus creating 
+          the initial exchange rate between the tokens. One additional aspect of the very first contribution 
+          to the pool was that the user would receive 100 shares of the pool. That is the initial number 
+          of shares added automatically. Every time thereafter, when someone adds to the already established 
+          pool the price will be automatically calculated and displayed in the appropriate fields in the 
+          SimpleSwapV1 application. Additionally, the total shares the user will receive will also be 
+          calculated based on the number of tokens in the pool, and the total shares in the pool already 
+          and the ratio to these existing amounts that the user adds to the pool.
+        </p>
+        <p>
+          Swapping is the main feature of any AMM and of course there is a lot of work that goes into making 
+          sure that the pool is always balanced during and after a swap happens. For this we had to create 
+          some additional helper methods that allowed us to calculate the estimated price of tokenA given 
+          tokenB and thus we could then use these in the application to automatically update the field when 
+          someone was trying to swap one token for another. We have used ReactJS to build the main components 
+          of the SimpleSwapV1 app in additional we have used the ethers.js library in order to connect to 
+          the web3 components such as the MetaMask wallet. With these tools in place, we were able to 
+          seamlessly connect to the C-AVAX test net and begin swapping and trading tokens on the 
+          SimpleSwapV1 application. There was still the issue of not being able to withdraw anything 
+          once you provided to the liquidity pool though, so this was not a very realistic simulation 
+          without this feature. That then prompted the addition of the withdraw method which also meant 
+          we would need another helper method to determine the total someone would receive based on the 
+          total shares of the pool they had access to and wished to withdraw. You can also witness the 
+          effects of impermanent loss, if you add to the pool and then do some trading, to create 
+          differences in the original prices from when you deposited to the pool, and then withdraw all 
+          your shares, you will not get back 100% of what you initially added to the pool. I can only 
+          assume this is due to the price fluctuations in the tokens and the fact that they have changed. 
+          Otherwise, it is a bug in our math, and I would rather hope it to not be the latter of the two 
+          situations.
+        </p>
+        <h5>Challenges in building project</h5>
+        <p>
+          Some of the most challenging parts of this project were getting the main provide function 
+          to work properly and balance things. Initially I was trying to use the Ropsten test net, 
+          but it was very slow and did not seem to work as smoothly as the Avalanche network. 
+          This may be because Ropsten is much more popular and is therefore busier, but it made for 
+          slow testing when trying to configure everything initially. Picking a formula to use was 
+          difficult initially as well because we were trying out formulas that were not so standard 
+          so finding the math to use to balance everything had to be worked out by hand and then 
+          implemented. This left use a bit nervous, that there may have been errors in our algebra 
+          that was causing the odd fluctuations, but on paper it all seemed to be correct, and the 
+          fact is it was probably just the way the curve of those functions worked.          
+        </p>
+        <h5>Conclusion</h5>
+        <p>
+          Overall, this project was very fun to build, and we learned a lot about working with smart 
+          contracts, how to implement them on a blockchain, and then connect these to a frontend in 
+          a way that allowed a user to interact with the key functionality of the contract from a 
+          nice-looking interface. Building the AMM simulator also gave us valuable insight into the 
+          core components that are needed to implement any AMM. If time was not such an issue, we 
+          would have surely added more but working within the constraints of our limited schedule I 
+          feel we accomplished a lot and learned even more.
+        </p>
+        <h5 class="center">References</h5>
+        <div style="width:auto; height:auto;padding-left:20%;">
+        <p>
+          Coinbase. (n.d.). What is slippage? Coinbase Help. Retrieved May 19, 2022, from <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="
+          https://help.coinbase.com/en/coinbase/trading-and-funding/advanced-trading/slippage" target="_blank">
+          https://help.coinbase.com/en/coinbase/trading-and-funding/advanced-trading/slippage</a>
+        </p>
+        <p>
+          Hendy, J. (2021, June 18). How Liquidity Pools Work and How To Earn Interest With Them. Finder.Com. <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="
+          https://www.finder.com/liquidity-pools" target="_blank">
+          https://www.finder.com/liquidity-pools</a>
+        </p>
+        <p>
+          Sergeenkov, A. (2021, August 20). What Is an Automated Market Maker? <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="
+          https://www.coindesk.com/learn/2021/08/20/what-is-an-automated-market-maker/" target="_blank">
+          https://www.coindesk.com/learn/2021/08/20/what-is-an-automated-market-maker/</a>
+        </p>
+        <p>
+          Tran, D. A., & Krishnamachari, B. (2022). Blockchain in a nutshell (arXiv:2205.01091). arXiv.<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="
+          http://arxiv.org/abs/2205.01091" target="_blank">
+          http://arxiv.org/abs/2205.01091</a>
+        </p>
+
+      </div>
         
     </div>
   </div>
