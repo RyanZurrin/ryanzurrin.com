@@ -18,6 +18,8 @@ myName.addEventListener("mouseover", function () {
     "#68f545",
   ];
   myName.style.color = colors[Math.floor(Math.random() * colors.length)];
+  myName.style.fontSize = "1.5em";
+  myName.style.fontFamily = "cursive";
 });
 
 // reset the color back to white when not hovering over
