@@ -25,4 +25,6 @@ myName.addEventListener("mouseover", function () {
 // reset the color back to white when not hovering over
 myName.addEventListener("mouseout", function () {
   myName.style.color = "white";
+  myName.style.fontSize = "33px";
+  myName.style.fontFamily = "Montserrat, sans-serif";
 });
