@@ -3,12 +3,9 @@
 <!--
     filename: index.html
     edited by: Ryan Zurrin
-    edited on: 7/27/2020
+    edited on: 7/8/2022
     description: template used for the final project from 
     "https://www.designstub.com/projects/folio-personal-portfolio-template/"
-    *****It was a bare bones template and I have been customizing and adding to it 
-         since i Downloaded the original code base. this site is now unique and not like the original
-         template  so if your looking for something on that link and it doesn't feel quite right, that is why.
 -->
 <!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
 <!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
@@ -152,7 +149,7 @@
           <!--this is the start of the right column-->
           <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right media center"> 
             <div class="center"><img loading="lazy" src="images/ryanzaboutme.jpg"
-              alt="ryan zurrin picture"><br><br></div>  
+              alt="ryan zurrin picture" id="myPic"><br><br></div> 
               <a role="button" class="btn btn-primary btn-lg" href="https://gofund.me/650f7ba9" target="_blank"> 
                 <img src="images/gofundme.JPG" alt="Submit" width="265"> </a><br><br><hr>
 
@@ -1057,7 +1054,8 @@
       </ul>
     </div>
     <div>
-      <a href="#top" alt="logo link back to top of page" aria-label="logo link back to top of page"> <div class="footerLogo"> </div></a>
+      <a href="#top" alt="logo link back to top of page" aria-label="logo link back to top of page"> <div class="footerLogo">
+        <img src="images/logo-3_new3.PNG"></div></a>
     </div>
     
 
@@ -1154,14 +1152,13 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBR5ZhjG2hAtCNRTKj9JMb79OW8bES0iEc"></script>
   <script>
     // When the window has finished loading create our google map below
-    google.maps.event.addDomListener(window, 'load', init);
+    //google.maps.event.addDomListener(window, 'load', init);
+    window.addEventListener("load", google.maps.event, false);
    
     function init() {
       // Basic options for a simple Google Map
       // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-      var mapOptions = {
-        // How zoomed in you want the map to start at (always required)
-        transform:scale(11),
+      var mapOptions = {        
 
         // The latitude and longitude to center the map (always required)
         center: new google.maps.LatLng(-23.507900, -46.588612), // Boston
@@ -1214,7 +1211,6 @@
           { 'ap': '$AP' }, { 'server': '$HOSTNAME' })
 // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.
   </script>
-  <script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script>
   <script src="js/myScripts.js"></script>
 </body>
 

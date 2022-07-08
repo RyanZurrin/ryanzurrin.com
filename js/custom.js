@@ -83,25 +83,4 @@
       }
     });
   });
-  a(window).load(function () {
-    a(".flexslider").flexslider({
-      animation: "fade",
-      animationLoop: !0,
-      slideshow: !0,
-      pauseOnAction: !1,
-      slideshowSpeed: 7e3,
-      controlNav: !0,
-      start: function (b) {
-        a("body").removeClass("loading");
-      },
-    });
-  });
-  a(window).load(function () {
-    a(".worklogo").flexslider({
-      animation: "slide",
-      slideshow: !1,
-      itemWidth: 210,
-      itemMargin: 5,
-    });
-  });
 })(jQuery);
