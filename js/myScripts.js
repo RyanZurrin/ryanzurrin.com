@@ -6,10 +6,8 @@ let images = [
 ];
 
 window.onload = function () {
-  // Get the element with id="defaultOpen" and click on it
   myName = document.getElementById("myName");
   myPic = document.getElementById("myPic");
-  console.log(myPic);
 
   myName.addEventListener("mouseover", function () {
     // create a list of light colors to randomly choose from
