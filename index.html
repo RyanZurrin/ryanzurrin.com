@@ -16,22 +16,24 @@
 <!--<![endif]-->
 
 <head>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-5M3DGZN');</script>
-  <!-- End Google Tag Manager -->
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168652707-3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5M3DGZN');</script>
+    <!-- End Google Tag Manager -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168652707-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'UA-168652707-3');
-</script>
+    gtag('config', 'UA-168652707-3');
+  </script>
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+
   <!-- setting Logo and character set for older IE versions-->
   <link rel="shortcut icon" href="logo-good.ico" type="image/x-icon">
 
@@ -1041,8 +1043,14 @@
               <label for="comments" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 conForm text-center">
               <textarea name="comments" id="comments" cols="1" rows="1" class="col-xs-12 col-sm-12 col-md-8 col-lg-8"
                  placeholder="Your message" ></textarea><span class="hide">Your Message</span> </label>
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><input type="submit" id="submit" name="send"
-                  class="submitBnt" value="Send message"></div>
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <input type="submit" id="submit" name="send"
+                  class="submitBnt" value="Send message">
+                  <!-- <button class="g-recaptcha" 
+                  data-sitekey="reCAPTCHA_site_key" 
+                  data-callback='onSubmit' 
+                  data-action='submit'>Submit</button>                   -->
+                </div>
               <div id="simple-msg"></div>
               <input type="hidden" name="_pid" value="154901">
               <input type="hidden" name="_fid" value="ZOH5VHN7">
@@ -1249,6 +1257,12 @@
 // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.
   </script>
   <script src="js/myScripts.js"></script>
+  <script>
+    function onSubmit(token) {
+      document.getElementById("contactform").submit();
+    }
+  </script>
+ 
 </body>
 
 </html>
