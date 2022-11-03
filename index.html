@@ -1044,9 +1044,23 @@
               <label for="comments" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 conForm text-center">
               <textarea name="comments" id="comments" cols="1" rows="1" class="col-xs-12 col-sm-12 col-md-8 col-lg-8"
                  placeholder="Your message" ></textarea><span class="hide">Your Message</span> </label>
+                 <br><br><br>
+
+                 <div id="_fm_captcha_div" style="display: none;"><center>
+                  <table cellpadding="1" cellspacing="0" border="0" bgcolor="#000000"><tr><td>
+                  <table cellpadding="2" cellspacing="0" border="0" style="width: 27em;">
+                  <tr><td bgcolor="#ECF1F4" style="color: #000000;">This test prevents automated submissions</td><td bgcolor="#ECF1F4" align="right"><a href="https://www.formmail.com/captcha/" target="_blank"><img src="https://fp1.formmail.com/images/fmsb_60x20.gif" height="20" width="60" alt="FormMail.com - Spam Block" border="0"></a></td></tr>
+                  <tr><td colspan="2" bgcolor="#FFFFFF" style="border-top: 1px solid #000000; color: #000000;"><center><img src="" width="200" height="40" id="_fm_captcha_img" alt="FormMail.com CAPTCHA"></center><br>Enter the text that appears in above image:<br><input type="text" name="_fm_captcha_text" width="10" style="width: 100%;" /></td></tr>
+                  </table>
+                  </td></tr></table>
+                  <input type="hidden" name="_fm_captcha_id" id="_fm_captcha_id" value="">
+                  </center></div>
+                  <br><br>
+
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <input type="submit" id="submit" name="send"
                   class="submitBnt" value="Send message">
+                  
                   <!-- <p class="text-center">
                     <small>This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply.</small>
                 </p> -->
@@ -1055,6 +1069,7 @@
                   data-callback='onSubmit' 
                   data-action='submit'>Submit</button>                   -->
                 </div>
+
               <div id="simple-msg"></div>
               <input type="hidden" name="_pid" value="154901">
               <input type="hidden" name="_fid" value="ZOH5VHN7">
@@ -1261,6 +1276,7 @@
 // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.
   </script>
   <script src="js/myScripts.js"></script>
+  <script type="text/javascript" src="https://fp1.formmail.com/fm_captcha.js"></script>
   <!-- <script src="https://www.google.com/recaptcha/api.js?render=6Le2da4ZAAAAADLLtc18d7qwEpbrUqxFF-Cwp8R7"></script>
 
   <script src="js/init.js"></script> -->
