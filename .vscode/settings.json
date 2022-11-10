@@ -1,20 +1,17 @@
 {
-    "githubPullRequests.remotes": [
-        "origin",
-        "upstream",
-        "resume-project-page"
-    ],
-    "cSpell.words": [
-        "contactform",
-        "DGZN",
-        "Freecodecamp",
-        "jquary",
-        "modernizr",
-        "msaapplication",
-        "myjournal",
-        "mywork",
-        "optimizelegibility",
-        "trfd",
-        "wirewrap"
-    ]
+  "githubPullRequests.remotes": ["origin", "upstream", "resume-project-page"],
+  "cSpell.words": [
+    "contactform",
+    "DGZN",
+    "Freecodecamp",
+    "jquary",
+    "modernizr",
+    "msaapplication",
+    "myjournal",
+    "mywork",
+    "Neuroimaging",
+    "optimizelegibility",
+    "trfd",
+    "wirewrap"
+  ]
 }
