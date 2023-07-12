@@ -515,6 +515,31 @@ nav a:hover {
 }
 
 /*----------------------------------------------------
+  publications Style
+------------------------------------------------------*/
+.publication {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.thumbnail {
+  width: 100px;
+  margin-right: 20px;
+}
+
+.publication-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.publication-paragraph {
+  margin: 0;
+  margin-left: 10px;
+  padding-bottom: 0px;
+}
+
+/*----------------------------------------------------
 	4. About me Style
 ------------------------------------------------------*/
 .aboutus {
