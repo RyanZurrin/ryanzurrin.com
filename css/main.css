@@ -262,7 +262,8 @@ header {
 }
 .bannerText h3 {
   color: #fff;
-  font-size: 19px;
+  font-size: 25px;
+  font-weight: 300;
   line-height: normal;
   font-weight: 400;
   text-transform: none;
