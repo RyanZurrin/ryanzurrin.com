@@ -2,6 +2,7 @@ window.onload = function () {
   let myName = document.getElementById("myName");
   let helloworld = document.getElementById("helloworld");
   let myPic = document.getElementById("myPic");
+  let myTagline = document.getElementById("myTagline");
 
   let nameTexts = [
     { main: "In Code We Trust", hello: "" },
@@ -37,6 +38,10 @@ window.onload = function () {
     "images/ryderandme.jpg",
   ];
 
+  function toggleTagLine(show) {
+    myTagLine.style.display = show ? 'block' : 'none';
+  }
+
   myName.addEventListener("mouseover", function () {
     let randomIndex = Math.floor(Math.random() * nameTexts.length);
     myName.style.color = colors[Math.floor(Math.random() * colors.length)];
@@ -45,6 +50,7 @@ window.onload = function () {
     if (Math.random() < 0.75) {
       helloworld.textContent = nameTexts[randomIndex].hello;
       myName.textContent = nameTexts[randomIndex].main;
+      toggleTagLine(false);
     }
 
     myName.style.fontSize = "1.5em";
@@ -58,6 +64,7 @@ window.onload = function () {
     myName.style.color = "white";
     myName.style.fontSize = "33px";
     myName.style.fontFamily = "Montserrat, sans-serif";
+    toggleTagLine(true);
   });
 
   myPic.addEventListener("mouseover", function () {
